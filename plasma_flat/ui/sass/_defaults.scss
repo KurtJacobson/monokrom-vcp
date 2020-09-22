@@ -1,0 +1,31 @@
+// Fonts
+$font-stack: Noto Sans !default;
+
+// Colors
+// nice orange: rgb(135, 75, 13)
+
+// Standard Colors
+$text-color: rgb(255, 238, 6);
+$background: rgb(22, 22, 14);
+$border-color: rgb(255, 238, 6);
+$layout-border-color: lighten($background, 6%);
+
+// Hover Colors
+$hover-text-color: $text-color;
+$hover-background: lighten($background, 6%);
+$hover-border-color: $border-color;
+
+// Disabled Colors
+$disabled-text-color: darken($text-color, 5%);
+$disabled-background: lighten($background, 2%);
+$disabled-border-color: lighten($background, 7%);
+
+// Borders
+$border-radius: 8px;
+$border: 2px solid $border-color;
+
+
+$green: rgb(118, 175, 0);
+$blue: rgb(128, 192, 0);
+$red: rgb(226, 78, 41);
+$yellow: rgb(254, 204, 0);

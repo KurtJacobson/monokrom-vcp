@@ -1,0 +1,97 @@
+/*===========================================================================*/
+/*                               QSpinBox                                    */
+/*===========================================================================*/
+
+QSpinBox,
+QDoubleSpinBox {
+    min-height: 25px;
+    min-width: 100px;
+    border: $border;
+    border-radius: $border-radius;
+    background-color: lighten($background, 4%);
+}
+
+QSpinBox:focus,
+QDoubleSpinBox:focus {
+    border-color: lighten($background, 40%);
+}
+
+QSpinBox[buttonSymbols="0"]::up-button,
+QSpinBox[buttonSymbols="1"]::up-button,
+QDoubleSpinBox[buttonSymbols="0"]::up-button,
+QDoubleSpinBox[buttonSymbols="1"]::up-button {
+    subcontrol-origin: margin;
+    subcontrol-position: center right;
+    width: 30px;
+    height: 15px;
+    border-left: 1px solid darken($border-color, 4%);
+}
+
+QSpinBox::up-bottom:hover,
+QDoubleSpinBox::up-button:hover {
+
+}
+
+QSpinBox::up-button:pressed,
+QDoubleSpinBox::up-button:pressed {
+
+}
+
+// buttonSymbols="QAbstractSpinBox::UpDownArrows"
+QSpinBox[buttonSymbols="0"]::up-arrow,
+QDoubleSpinBox[buttonSymbols="0"]::up-arrow {
+    image: url(icons/arrow-up.png);
+}
+
+// buttonSymbols="QAbstractSpinBox::PlusMinus"
+QSpinBox[buttonSymbols="1"]::up-arrow,
+QDoubleSpinBox[buttonSymbols="1"]::up-arrow {
+    image: url(icons/plus.png);
+}
+
+QSpinBox::up-arrow:off,
+QSpinBox::up-arrow:disabled,
+QDoubleSpinBox::up-arrow:off,
+QDoubleSpinBox::up-arrow:disabled { /* off state when value is max */
+
+}
+
+QSpinBox[buttonSymbols="0"]::down-button,
+QSpinBox[buttonSymbols="1"]::down-button,
+QDoubleSpinBox[buttonSymbols="0"]::down-button,
+QDoubleSpinBox[buttonSymbols="1"]::down-button {
+    subcontrol-origin: margin;
+    subcontrol-position: center left;
+    width: 30px;
+    height: 15px;
+    border-right: 1px solid darken($border-color, 4%);
+}
+
+QSpinBox::down-button:hover,
+QDoubleSpinBox::down-button:hover {
+
+}
+
+QSpinBox::down-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+
+}
+
+// buttonSymbols="QAbstractSpinBox::UpDownArrows"
+QSpinBox[buttonSymbols="0"]::down-arrow,
+QDoubleSpinBox[buttonSymbols="0"]::down-arrow {
+    image: url(icons/arrow-down.png);
+}
+
+// buttonSymbols="QAbstractSpinBox::PlusMinus"
+QSpinBox[buttonSymbols="1"]::down-arrow,
+QDoubleSpinBox[buttonSymbols="1"]::down-arrow {
+    image: url(icons/minus.png);
+}
+
+QSpinBox::down-arrow:off,
+QSpinBox::down-arrow:disabled,
+QDoubleSpinBox::down-arrow:off,
+QDoubleSpinBox::down-arrow:disabled { /* off state when value in min */
+
+}

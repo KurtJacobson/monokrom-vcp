@@ -1,0 +1,18 @@
+// Change default values
+
+// text colort
+$text-color: white;
+$selected-text-color: rgb(77, 177, 177);
+
+$background: rgb(46, 49, 63);
+
+$highlight-color: rgb(77, 177, 177);
+
+$border-radius: 3px;
+$border: 1px solid rgb(77, 77, 77); 
+
+
+
+// Import base style
+
+@import 'base';

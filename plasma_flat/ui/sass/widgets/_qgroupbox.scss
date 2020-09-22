@@ -1,0 +1,20 @@
+/*===========================================================================*/
+/*                               QGroupBox                                   */
+/*===========================================================================*/
+
+QGroupBox {
+  padding-top: 30px;
+  border: $border;
+  border-radius: $border-radius;
+  font: bold 14px;
+}
+
+QGroupBox::title {
+  subcontrol-origin: padding;
+  subcontrol-position: top center;
+  padding: 1px;
+  color: $background;
+  background: red;
+  // padding-left: 100%;
+  // padding-right: 100%;
+}

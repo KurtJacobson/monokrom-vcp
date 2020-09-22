@@ -1,0 +1,51 @@
+/*===========================================================================*/
+/*                               QTabWidget                                  */
+/*===========================================================================*/
+
+QTabWidget {
+
+}
+
+QTabWidget::pane {
+  border: $border;
+  border-radius: $border-radius;
+  padding: 1px;
+}
+
+QTabWidget[tabPosition="0"]::pane { //top tabs
+  border-top: none;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+QTabWidget[tabPosition="1"]::pane { //bottom tabs
+  border-bottom: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+QTabWidget[tabPosition="2"]::pane { //left (west) tabs
+  border-left: none;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+
+QTabWidget[tabPosition="3"]::pane { //right (east) tabs
+  border-right: none;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+QTabWidget::tab-bar {
+
+}
+
+QTabWidget::tab-bar:top,
+QTabWidget::tab-bar:bottom {
+  width: 100000px; //distribute tabs
+}
+
+QTabWidget::tab-bar:left,
+QTabWidget::tab-bar:right {
+  height: 100000px; //distribute tabs
+}

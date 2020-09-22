@@ -1,0 +1,15 @@
+/*===========================================================================*/
+/*                                QWidget                                    */
+/*===========================================================================*/
+
+QWidget {
+  background: $background;
+  color: $text-color;
+  font: $font-stack;
+}
+
+QWidget:disabled {
+  color: darken($text-color, 5%);
+  background: lighten($background, 2%);
+  border-color: lighten($background, 7%);
+}

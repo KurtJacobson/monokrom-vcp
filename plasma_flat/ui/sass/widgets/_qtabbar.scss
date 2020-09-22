@@ -1,0 +1,122 @@
+/*===========================================================================*/
+/*                                QTabBar                                    */
+/*===========================================================================*/
+
+QTabBar {
+
+}
+
+QTabBar::tab {
+  font: bold 14px;
+}
+
+QTabBar::tab:top,
+QTabBar::tab:bottom {
+    min-width: 10ex;
+    min-height: 25px;
+    padding: 0px 0px 0px 10px;
+}
+
+QTabBar::tab:top {
+   border-top: $border;
+   border-bottom-left-radius: $border-radius;
+   border-bottom-right-radius: $border-radius;
+}
+
+QTabBar::tab:bottom {
+   border-bottom: $border;
+   border-top-left-radius: $border-radius;
+   border-top-right-radius: $border-radius;
+}
+
+QTabBar::tab:left,
+QTabBar::tab:right {
+    min-height: 10ex;
+    min-width: 25px;
+    padding: 10px 0px 10px 0px;
+}
+
+QTabBar::tab:left { //actualy right (east)
+  border-right: $border;
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: $border-radius;
+}
+
+QTabBar::tab:right { //actualy left (west)
+  border-left: $border;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
+QTabBar::tab:selected {
+    color: $background;
+    background: $border-color;
+}
+
+QTabBar::tab:!selected {
+    background: $background;
+}
+
+QTabBar::tab:top:first {
+  border-left: $border;
+  border-top-left-radius: $border-radius;
+  border-bottom-left-radius: 0px;
+}
+
+QTabBar::tab:top:last {
+  border-right: $border;
+  border-top-right-radius: $border-radius;
+  border-bottom-right-radius: 0px;
+}
+
+QTabBar::tab:bottom:first {
+  border-left: $border;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: $border-radius;
+}
+
+QTabBar::tab:bottom:last {
+  border-right: $border;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: $border-radius;
+}
+
+QTabBar::tab:left:first { //actualy right
+  border-top: $border;
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: 0px;
+}
+
+QTabBar::tab:left:last { //actualy right
+  border-bottom: $border;
+  border-bottom-right-radius: $border-radius;
+  border-bottom-left-radius: 0px;
+}
+
+QTabBar::tab:right:first { //actualy left
+  border-top: $border;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: 0px;
+}
+
+QTabBar::tab:right:last { //actualy left
+  border-bottom: $border;
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: 0px;
+}
+
+QTabBar::tab:top:only-one { //actualy left
+  border-radius: $border-radius;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+QTabBar::tab:bottom:only-one { //actualy left
+  border-radius: $border-radius;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+QTabBar::tab:!selected:hover {
+  background: lighten($background, 4%);
+}

@@ -1,0 +1,21 @@
+
+
+
+
+QListView {
+  color: $border-color;
+  background-color: lighten($background, 5%);
+  alternate-background-color: lighten($background, 2%);
+  border: $border;
+  border-color: $layout-border-color;
+  border-radius: 8px;
+}
+
+QListView::item {
+  color: $border-color;
+  // background-color: rgb(80, 80, 80);
+}
+
+QListView::item:hover {
+    // background-color: rgb(95, 95, 95);
+}

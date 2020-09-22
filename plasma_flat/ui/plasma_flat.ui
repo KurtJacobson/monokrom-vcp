@@ -1,0 +1,1056 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="VCPMainWindow" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>786</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>icons/icon.png</normaloff>icons/icon.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="mainTabWidget">
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>MAIN</string>
+       </attribute>
+       <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="4,1,6">
+        <property name="spacing">
+         <number>14</number>
+        </property>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <property name="spacing">
+           <number>14</number>
+          </property>
+          <item>
+           <widget class="QFrame" name="file_frame">
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_8">
+             <property name="spacing">
+              <number>2</number>
+             </property>
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_6">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLabel" name="label_7">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                 <property name="text">
+                  <string>OPEN:</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="RecentFileComboBox" name="recentfilecombobox_2">
+                 <property name="sizePolicy">
+                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                   <horstretch>0</horstretch>
+                   <verstretch>0</verstretch>
+                  </sizepolicy>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </item>
+             <item>
+              <widget class="GcodeTextEdit" name="gcodetextedit_3">
+               <property name="currentLineBackground" stdset="0">
+                <color>
+                 <red>40</red>
+                 <green>40</green>
+                 <blue>28</blue>
+                </color>
+               </property>
+               <property name="marginBackground" stdset="0">
+                <color>
+                 <red>22</red>
+                 <green>22</green>
+                 <blue>14</blue>
+                </color>
+               </property>
+               <property name="marginCurrentLineBackground" stdset="0">
+                <color>
+                 <red>33</red>
+                 <green>33</green>
+                 <blue>24</blue>
+                </color>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="tabShape">
+             <enum>QTabWidget::Rounded</enum>
+            </property>
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_4">
+             <attribute name="icon">
+              <iconset>
+               <normaloff>icons/crosshairs-solid.png</normaloff>
+               <normalon>icons/crosshairs-solid.on.png</normalon>icons/crosshairs-solid.png</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>WORK</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_5">
+              <property name="sizeConstraint">
+               <enum>QLayout::SetMinimumSize</enum>
+              </property>
+              <property name="leftMargin">
+               <number>20</number>
+              </property>
+              <property name="topMargin">
+               <number>20</number>
+              </property>
+              <property name="rightMargin">
+               <number>20</number>
+              </property>
+              <property name="bottomMargin">
+               <number>20</number>
+              </property>
+              <property name="spacing">
+               <number>10</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="ActionButton" name="actionbutton_13">
+                <property name="minimumSize">
+                 <size>
+                  <width>34</width>
+                  <height>29</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>G54</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>machine.set-work-coord:G54</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="ActionButton" name="actionbutton_12">
+                <property name="minimumSize">
+                 <size>
+                  <width>34</width>
+                  <height>29</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>G55</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>machine.set-work-coord:G55</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="ActionButton" name="actionbutton_11">
+                <property name="minimumSize">
+                 <size>
+                  <width>34</width>
+                  <height>29</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>G56</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>machine.set-work-coord:G56</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <widget class="ActionButton" name="actionbutton_14">
+                <property name="minimumSize">
+                 <size>
+                  <width>34</width>
+                  <height>29</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>G57</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>machine.set-work-coord:G57</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="4">
+               <widget class="CompositeDroGroup" name="compositedrogroup_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>10000</width>
+                  <height>200</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="ActionButton" name="actionbutton_15">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>44</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">max-width: 40px;</string>
+                </property>
+                <property name="icon">
+                 <iconset>
+                  <normaloff>../widgets/composite_dro/icons/homed.png</normaloff>
+                  <disabledoff>icons/homed.png</disabledoff>../widgets/composite_dro/icons/homed.png</iconset>
+                </property>
+                <property name="iconSize">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>machine.home.all</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="tab_3">
+             <attribute name="icon">
+              <iconset>
+               <normaloff>icons/crosshairs-solid.png</normaloff>
+               <normalon>icons/crosshairs-solid.on.png</normalon>
+               <activeoff>icons/crosshairs-solid.on.png</activeoff>
+               <selectedoff>icons/crosshairs-solid.on.png</selectedoff>icons/crosshairs-solid.png</iconset>
+             </attribute>
+             <attribute name="title">
+              <string>MACHINE</string>
+             </attribute>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_2">
+          <property name="spacing">
+           <number>14</number>
+          </property>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <widget class="QWidget" name="tabWidget_5Page1">
+             <attribute name="title">
+              <string>FILE</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout_3">
+              <property name="leftMargin">
+               <number>14</number>
+              </property>
+              <property name="topMargin">
+               <number>14</number>
+              </property>
+              <property name="rightMargin">
+               <number>14</number>
+              </property>
+              <item row="1" column="0">
+               <widget class="ActionButton" name="actionbutton_2">
+                <property name="text">
+                 <string>EDIT</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="ActionButton" name="actionbutton_4">
+                <property name="text">
+                 <string>RECENT</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="ActionButton" name="actionbutton">
+                <property name="text">
+                 <string>OPEN</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="ActionButton" name="actionbutton_3">
+                <property name="text">
+                 <string>CLEAR</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_2">
+            <widget class="QWidget" name="tabWidget_2Page1">
+             <attribute name="title">
+              <string>CONTROL</string>
+             </attribute>
+             <layout class="QGridLayout" name="gridLayout">
+              <property name="leftMargin">
+               <number>14</number>
+              </property>
+              <property name="topMargin">
+               <number>14</number>
+              </property>
+              <property name="rightMargin">
+               <number>14</number>
+              </property>
+              <property name="bottomMargin">
+               <number>14</number>
+              </property>
+              <property name="spacing">
+               <number>10</number>
+              </property>
+              <item row="3" column="1">
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="text">
+                 <string>REVERSE
+RUN</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QPushButton" name="pushButton_8">
+                <property name="text">
+                 <string>THC
+ENABLE</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="text">
+                 <string>M1
+BREAK</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="text">
+                 <string>FEED
+HOLD</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QPushButton" name="pushButton_6">
+                <property name="text">
+                 <string>CYCLE START</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0" colspan="2">
+               <layout class="QGridLayout" name="gridLayout_2">
+                <item row="1" column="1">
+                 <layout class="QVBoxLayout" name="verticalLayout_7">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="StatusLabel" name="statuslabel_5">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DSEG7 Classic</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <italic>true</italic>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: bold italic 10pt &quot;DSEG7 Classic&quot;;</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="rules" stdset="0">
+                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:feedrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;{:.0%}\&quot;.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_9">
+                    <property name="font">
+                     <font>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>FEED</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="1">
+                 <widget class="ActionSlider" name="actionslider_2">
+                  <property name="enabled">
+                   <bool>true</bool>
+                  </property>
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="actionName" stdset="0">
+                   <string>machine.feed-override.set</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="ActionSlider" name="actionslider">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="actionName" stdset="0">
+                   <string>machine.rapid-override.set</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <layout class="QVBoxLayout" name="verticalLayout">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="StatusLabel" name="statuslabel_4">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DSEG7 Classic</family>
+                      <weight>75</weight>
+                      <italic>true</italic>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: bold italic 10pt &quot;DSEG7 Classic&quot;;</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="rules" stdset="0">
+                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:rapidrate&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;{:.0%}\&quot;.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_8">
+                    <property name="font">
+                     <font>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>RAPID</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="1" column="2">
+                 <layout class="QVBoxLayout" name="verticalLayout_9">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="StatusLabel" name="statuslabel_6">
+                    <property name="sizePolicy">
+                     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                      <horstretch>0</horstretch>
+                      <verstretch>0</verstretch>
+                     </sizepolicy>
+                    </property>
+                    <property name="minimumSize">
+                     <size>
+                      <width>50</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <family>DSEG7 Classic</family>
+                      <pointsize>10</pointsize>
+                      <weight>75</weight>
+                      <italic>true</italic>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font: bold italic 10pt &quot;DSEG7 Classic&quot;;</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                    <property name="rules" stdset="0">
+                     <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;settings:machine.jog.linear-speed-percentage&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;{:.0f}%\&quot;.format(ch[0])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_10">
+                    <property name="font">
+                     <font>
+                      <family>Sans</family>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="text">
+                     <string>JOG</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+                <item row="0" column="2">
+                 <widget class="VCPSettingsSlider" name="settings_slider">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="settingName" stdset="0">
+                   <string>machine.jog.linear-speed-percentage</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </item>
+              <item row="4" column="0">
+               <widget class="QPushButton" name="pushButton_7">
+                <property name="text">
+                 <string>PIERCE
+AND CUT</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="text">
+                 <string>STOP
+HAULT</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0" colspan="2">
+               <widget class="ActionButton" name="actionbutton_10">
+                <property name="text">
+                 <string>MACHINE POWER</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>machine.power.toggle</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_4">
+          <property name="spacing">
+           <number>14</number>
+          </property>
+          <item>
+           <widget class="QTabWidget" name="tabWidget_3">
+            <property name="currentIndex">
+             <number>0</number>
+            </property>
+            <widget class="QWidget" name="tab_7">
+             <attribute name="title">
+              <string>TOOL PATH</string>
+             </attribute>
+             <layout class="QHBoxLayout" name="horizontalLayout_5">
+              <item>
+               <widget class="VTKBackPlot" name="vtkbackplot">
+                <property name="backgroundColor" stdset="0">
+                 <color>
+                  <red>22</red>
+                  <green>22</green>
+                  <blue>14</blue>
+                 </color>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="spacing">
+             <number>14</number>
+            </property>
+            <item>
+             <widget class="QTabWidget" name="tabWidget_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_16">
+               <attribute name="title">
+                <string>JOG</string>
+               </attribute>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTabWidget" name="tabWidget_4">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>300</height>
+               </size>
+              </property>
+              <property name="currentIndex">
+               <number>0</number>
+              </property>
+              <widget class="QWidget" name="tab_14">
+               <attribute name="title">
+                <string>THC</string>
+               </attribute>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>SETTINGS</string>
+       </attribute>
+       <widget class="QTabWidget" name="tabWidget_6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>120</y>
+          <width>291</width>
+          <height>221</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="tabWidget_6Page1" native="true">
+         <attribute name="title">
+          <string>DRO FORMAT</string>
+         </attribute>
+         <layout class="QFormLayout" name="formLayout">
+          <property name="labelAlignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+          <property name="horizontalSpacing">
+           <number>6</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Inch Format</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="VCPSettingsLineEdit" name="settings_lineedit">
+            <property name="settingName" stdset="0">
+             <string>dro.inch-format</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Millimeter Format</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="VCPSettingsLineEdit" name="settings_lineedit_2">
+            <property name="settingName" stdset="0">
+             <string>dro.millimeter-format</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_3">
+            <property name="text">
+             <string>Degree Format</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1">
+           <widget class="VCPSettingsLineEdit" name="settings_lineedit_3">
+            <property name="settingName" stdset="0">
+             <string>dro.degree-format</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="text">
+             <string>Display Units</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="text">
+             <string>Lathe X-axis Mode</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="VCPSettingsComboBox" name="settingscombobox">
+            <property name="settingName" stdset="0">
+             <string>dro.display-units</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="VCPSettingsComboBox" name="settingscombobox_2">
+            <property name="settingName" stdset="0">
+             <string>dro.lathe-radius-mode</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QTabWidget" name="tabWidget_7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>291</width>
+          <height>91</height>
+         </rect>
+        </property>
+        <widget class="QWidget" name="tabWidget_7Page1" native="true">
+         <attribute name="title">
+          <string>USER INPUT</string>
+         </attribute>
+         <layout class="QVBoxLayout" name="verticalLayout_5">
+          <item>
+           <widget class="VCPSettingsCheckBox" name="settings_checkbox">
+            <property name="text">
+             <string>On-Screen Keyboard </string>
+            </property>
+            <property name="settingName" stdset="0">
+             <string>virtual-input.enable</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_5">
+       <attribute name="title">
+        <string>DIAGNOSTICS</string>
+       </attribute>
+       <widget class="CompositeDroGroup" name="compositedrogroup_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>400</width>
+          <height>211</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Ignored" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>400</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>10000</width>
+          <height>16777215</height>
+         </size>
+        </property>
+       </widget>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="15" margin="10"/>
+ <customwidgets>
+  <customwidget>
+   <class>CompositeDroGroup</class>
+   <extends>QWidget</extends>
+   <header>plasma_flat.widgets.composite_dro.composite_dro</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.action_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>StatusLabel</class>
+   <extends>QLabel</extends>
+   <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>RecentFileComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.recent_file_combobox</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsSlider</class>
+   <extends>QSlider</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>GcodeTextEdit</class>
+   <extends>QPlainTextEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.gcode_text_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPMainWindow</class>
+   <extends>QMainWindow</extends>
+   <header>qtpyvcp.widgets.form_widgets.main_window</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>VTKBackPlot</class>
+   <extends>QWidget</extends>
+   <header>qtpyvcp.widgets.display_widgets.vtk_backplot.vtk_backplot</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPSettingsCheckBox</class>
+   <extends>QCheckBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>ActionButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.action_button</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

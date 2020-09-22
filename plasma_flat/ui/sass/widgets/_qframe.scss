@@ -1,0 +1,24 @@
+/*===========================================================================*/
+/*                                QFrame                                     */
+/*===========================================================================*/
+
+
+.QFrame {
+  border: $border;
+  border-width: 1px;
+  border-color: $border-color;
+  border-radius: $border-radius;
+  padding: 4px;
+}
+
+QFrame[frameShape="4"] { // QFrame::HLine == 0x0004
+  border: none;
+  border-top: 1px solid lighten($background, 5%);
+  max-height: 1px;
+}
+
+QFrame[frameShape="5"] { // QFrame::VLine == 0x0005
+  border: none;
+  border-left: 1px solid lighten($background, 5%);
+  max-width: 1px;
+}

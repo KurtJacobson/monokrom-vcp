@@ -1,0 +1,26 @@
+/*===========================================================================*/
+/*                             QToolButton                                   */
+/*===========================================================================*/
+
+QToolButton {
+  color: $text-color;
+  background: transparent;
+  border: none;
+  border-radius: 3px;
+  min-height: 25px;
+  min-width: 25px;
+}
+
+QToolButton:hover {
+  border: $border;
+  background: lighten( $background, 4%);
+}
+
+QToolButton:pressed {
+  border: $border;
+  border-color: darken($border-color, 5%);
+}
+
+QToolButton:disabled {
+  /* need to find a way to indicate disabled state */
+}

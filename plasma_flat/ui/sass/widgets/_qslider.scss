@@ -1,0 +1,83 @@
+/*===========================================================================*/
+/*                               QSlider                                     */
+/*===========================================================================*/
+
+QSlider:disabled {
+  background: $background;
+}
+
+QSlider:horizontal {
+  min-height: 30px;
+  border-radius: 8px;
+}
+
+QSlider:vertical {
+  min-width: 30px;
+  border-radius: 8px;
+}
+
+QSlider::groove {
+    // border: $border;
+    border-radius: 8px;
+    background: lighten($background, 3%);
+}
+
+QSlider::groove:horizontal {
+    height: 20px;
+}
+
+QSlider::groove:vertical {
+    width: 20px;
+    // margin-top: -15px;
+    // margin-bottom: -15px;
+}
+
+QSlider::handle {
+  // background: $border-color;
+  // border: $border;
+  // border-radius: 8px;
+  width: 50px;
+  height: 50px;
+}
+
+QSlider::handle:horizontal {
+  margin-top: -15px;
+  margin-bottom: -15px;
+  margin-left: -25px;
+  margin-right: -25px;
+}
+
+QSlider::handle:vertical {
+  margin-top: -25px;
+  margin-bottom: -5px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+QSlider::add-page {
+  // margin-top: 2px;
+  border-radius: 8px;
+}
+
+QSlider::sub-page {
+  // margin-top: 2px;
+  // margin-top: -10px;
+  border-radius: 8px;
+}
+
+QSlider::add-page:horizontal {
+  background: $border-color;
+}
+
+QSlider::sub-page:horizontal {
+  background: lighten($background, 3%);;
+}
+
+QSlider::add-page:vertical {
+  background: $border-color; //lighten($background, 1%);
+}
+
+QSlider::sub-page:vertical {
+  // margin-top: 25px;
+  // background: lighten($background, 3%);
+}

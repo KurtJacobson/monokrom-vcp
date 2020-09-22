@@ -1,0 +1,14 @@
+/*===========================================================================*/
+/*                                 QLabel                                    */
+/*===========================================================================*/
+
+QLabel {
+  padding: 2
+}
+
+QLabel[frameShape='6'] { // styled panel
+  background: darken($background, 2%);
+  border: $border;
+  border-color: darken($border-color, 4%);
+  border-radius: $border-radius;
+}

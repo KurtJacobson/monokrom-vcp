@@ -1,0 +1,15 @@
+/*===========================================================================*/
+/*                              QLineEdit                                    */
+/*===========================================================================*/
+
+QLineEdit {
+    color: $text-color;
+    background-color: lighten($background, 4%);
+    border: $border;
+    border-radius: $border-radius;
+    min-height: 25px;
+}
+
+QLineEdit:focus {
+    border-color: lighten($border-color, 10%);
+}

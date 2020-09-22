@@ -1,0 +1,30 @@
+/*===========================================================================*/
+/*                         QAbstractItemView                                 */
+/*===========================================================================*/
+
+QAbstractItemView {
+    color: $border-color;
+    background-color: lighten($background, 5%);
+    alternate-background-color: lighten($background, 2%);
+    border: $border;
+    border-color: $layout-border-color;
+    border-radius: 8px;
+}
+
+QAbstractItemView::item {
+    color: $border-color;
+    background-color: transparent;
+    selection-background-color: transparent;
+    min-height: 30px;
+    border: none;
+}
+
+QAbstractItemView::item::icon {
+  padding-left: 4px;
+  padding-right: 4px
+}
+
+QAbstractItemView::item:selected {
+    color: lighten($text-color, 40%);
+    background-color: darken($background, 2%);
+}

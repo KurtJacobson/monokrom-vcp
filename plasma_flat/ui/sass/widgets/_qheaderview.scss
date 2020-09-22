@@ -1,0 +1,42 @@
+/*===========================================================================*/
+/*                             QHeaderView                                   */
+/*===========================================================================*/
+
+QHeaderView {
+  min-height: 20px;
+  background-color: $background;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom: $border;
+  border-bottom-color: $layout-border-color;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+QHeaderView::section {
+  background-color: $background;
+  padding-left: 5px;
+  text-align: center;
+  border: 1px solid transparent;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  border-right: 1px solid darken($border-color, 4%);
+}
+
+QHeaderView::section:last {
+  border-right: 1px solid transparent;
+}
+
+QHeaderView::section:checked
+{
+
+}
+
+/* style the sort indicator */
+QHeaderView::down-arrow {
+  image: url(icons/arrow-down.png);
+}
+
+QHeaderView::up-arrow {
+  image: url(icons/arrow-up.png);
+}

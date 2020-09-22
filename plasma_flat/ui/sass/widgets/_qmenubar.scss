@@ -1,0 +1,26 @@
+/*===========================================================================*/
+/*                               QMenuBar                                    */
+/*===========================================================================*/
+
+QMenuBar {
+
+}
+
+QMenuBar::item {
+    spacing: 3px;
+    padding: 4px 5px;
+    color: grey;
+    /* sets background of item. set to something non-transparent
+       if you want menu color and item color to be different */
+    background: transparent;
+}
+
+QMenuBar::item:pressed {
+
+}
+
+QMenuBar::item:selected {
+    color: rgb(200, 200, 200);
+    background-color: rgb(20, 20, 30);
+}
+

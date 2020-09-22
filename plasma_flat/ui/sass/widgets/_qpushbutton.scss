@@ -1,0 +1,57 @@
+/*===========================================================================*/
+/*                             QPushButton                                   */
+/*===========================================================================*/
+
+QPushButton {
+  color: $text-color;
+  background: lighten( $background, 2%);
+  border: $border;
+  border-radius: $border-radius;
+  min-height: 25px;
+  min-width: 30px;
+}
+
+QPushButton:hover,
+QPushButton:focus {
+    background: $hover-background;
+}
+
+QPushButton:disabled {
+  color: darken($text-color, 5%);
+  background: lighten($background, 2%);
+  border-color: mix($border-color, $background, 40);
+}
+
+QPushButton:pressed {
+  border-color: darken($border-color, 5%);
+  border-width: 2px 1px 1px 2px;
+  padding: 1px 0px 0px 1px;
+}
+
+QPushButton:checked {
+  color: $background;
+  background: $border-color;
+}
+
+QPushButton:checked:disabled {
+  background: mix($border-color, $background, 40);
+}
+
+QPushButton:flat {
+  color: $text-color;
+  background: transparent;
+  border: none;
+  border-radius: 3px;
+  min-height: 25px;
+  min-width: 25px;
+}
+
+QPushButton:flat:hover {
+  border: $border;
+  background: lighten( $background, 4%);
+}
+
+QPushButton:flat:pressed {
+  border: $border;
+  border-color: darken($border-color, 5%);
+}
