@@ -16,10 +16,70 @@ Example:
 
 """
 
+
+cmd_doc = """
+{vcp_name} - A QtPyVCP based Virtual Control Panel for LinuxCNC.
+
+Usage:
+  {vcp_cmd} --ini INI [options]
+  {vcp_cmd} --install
+  {vcp_cmd} (-h | --help)
+  {vcp_cmd} (-v | --version)
+  {vcp_cmd} (-i | --info)
+
+Required Arguments:
+  --ini INI            Path to INI file, relative to ~/linuxcnc/configs.
+
+Commands:
+  --install            Installs LinuxCNC configs, data files etc. in the correct
+                       locations. This should always be run after updating.
+
+Display  Options:
+  --theme THEME        The Qt theme to use, defaults to system theme.
+  --stylesheet STYLESHEET
+                       Path to QSS file containing styles to be applied
+                       to specific Qt and/or QtPyVCP widget classes.
+  --size WIDTHxHEIGHT  Initial size of the window in pixels.
+  --position XPOSxYPOS
+                       Initial position of the window, specified as the
+                       coordinates of the top left corner of the window
+                       relative to the top left corner of the screen.
+  --fullscreen BOOL    Flag to start with window fullscreen.
+  --maximize BOOL      Flag to start with window maximized.
+  --hide-menu-bar      Hides the menu bar, if present.
+  --hide-status-bar    Hides the status bar, if present.
+  --hide-cursor        Hide the mouse cursor.
+  --confirm-exit BOOL  Whether to show dialog to confirm exit.
+
+Application Options:
+  --log-level=(DEBUG | INFO | WARN | ERROR | CRITICAL)
+                       Sets the log level. Default INFO.
+  --config-file PATH   Specify the YML config file relative to $CONFIG_DIR.
+  --log-file PATH      Specify the log file relative to $CONFIG_DIR.
+  --qt-api (pyqt5 | pyqt | pyside2 | pyside)
+                       Specify the Qt Python binding to use.
+  --perfmon            Monitor and log system performance.
+  --develop            Development mode. Enables live reloading of QSS styles.
+  --command_line_args <args>...
+                       Additional args passed to the QtApplication.
+
+General Options:
+  -h --help            Show this help and exit.
+  -v --version         Show version and exit.
+  -i --info            Show system info and exit.
+
+Note:
+  When specifying {vcp_name} in the INI using [DISPLAY]DISPLAY={vcp_cmd} [...]
+  the --ini parameter will be passed by the linuxcnc startup script so does
+  not need to be specified.
+
+"""
+
 __version__ = '0.0.1'
 
 import os
 import qtpyvcp
+from distutils.dir_util import copy_tree
 
 VCP_DIR = os.path.realpath(os.path.dirname(__file__))
 VCP_CONFIG_FILE = os.path.join(VCP_DIR, 'config.yml')
@@ -29,9 +89,19 @@ def main(opts=None):
 
     if opts is None:
         from qtpyvcp.utilities.opt_parser import parse_opts
-        opts = parse_opts(vcp_cmd='myvcp',
-                          vcp_name='MyVCP',
+        opts = parse_opts(doc=cmd_doc,
+                          vcp_cmd='plasma-flat',
+                          vcp_name='Plasma Flat',
                           vcp_version=__version__)
+
+        if opts.install:
+            lcnc_files = os.path.join(VCP_DIR, 'linuxcnc')
+            if not os.path.isdir(lcnc_files):
+                lcnc_files = os.path.expanduser('~/.local/share/plasma_flat')
+
+            copy_tree(lcnc_files, os.path.expanduser('~/'), update=1)
+            print "Successfully installed files."
+            return
 
     qtpyvcp.run_vcp(opts, VCP_CONFIG_FILE)
 
