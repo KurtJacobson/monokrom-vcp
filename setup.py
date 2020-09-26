@@ -15,8 +15,8 @@ DATA_FILES = [
 
 # list of (destination, source_dir) tuples
 DATA_DIRS = [
-    ('share/linuxcnc/configs/sim.plasma-flat/', 'linuxcnc/configs/sim.plasma-flat'),
-    ('share/linuxcnc/nc_files/plasma-flat', 'linuxcnc/nc_files/plasma-flat'),
+    ('share/plasma_flat/linuxcnc/configs/sim.plasma-flat/', 'linuxcnc/configs/sim.plasma-flat'),
+    ('share/plasma_flat/linuxcnc/nc_files/plasma-flat', 'linuxcnc/nc_files/plasma-flat'),
 ]
 
 
