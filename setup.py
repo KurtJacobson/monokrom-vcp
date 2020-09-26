@@ -15,8 +15,7 @@ DATA_FILES = [
 
 # list of (destination, source_dir) tuples
 DATA_DIRS = [
-    ('share/plasma_flat/linuxcnc/configs/sim.plasma-flat/', 'linuxcnc/configs/sim.plasma-flat'),
-    ('share/plasma_flat/linuxcnc/nc_files/plasma-flat', 'linuxcnc/nc_files/plasma-flat'),
+    ('share/plasma_flat/linuxcnc', 'linuxcnc/'),
 ]
 
 
@@ -47,8 +46,8 @@ setup(
     url="https://github.com/kurtjacobson/plasma-flat",
     download_url="https://github.com/kurtjacobson/plsama-flat/tarball/master",
     packages=find_packages(),
-    data_files=data_files,
     include_package_data=True,
+    data_files=data_files,
     entry_points=entry_points,
     # install_requires=[
     #    'qtpyvcp',
