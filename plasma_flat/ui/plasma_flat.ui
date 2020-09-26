@@ -987,7 +987,6 @@ HAULT</string>
    </layout>
   </widget>
  </widget>
- <layoutdefault spacing="15" margin="10"/>
  <customwidgets>
   <customwidget>
    <class>CompositeDroGroup</class>
