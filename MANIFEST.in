@@ -1,1 +1,2 @@
 graft plasma_flat/*
+include plasma_flat/config.yml
