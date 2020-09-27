@@ -656,8 +656,8 @@ QSizeGrip {
 /*===========================================================================*/
 /*                            MonoKrom DRO                                   */
 /*===========================================================================*/
-.MonoromDroWidget {
-  min-width: 330px; }
+.MonokromDroWidget {
+  min-width: 320px; }
 
 .MonokromDroWidget DROLineEdit {
   font: bold italic 30pt "DSEG7 Classic";
