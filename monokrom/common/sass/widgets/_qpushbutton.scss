@@ -17,7 +17,7 @@ QPushButton:focus {
 }
 
 QPushButton:disabled {
-  color: darken($text-color, 5%);
+  color: mix($border-color, $background, 40);
   background: lighten($background, 2%);
   border-color: mix($border-color, $background, 40);
 }
