@@ -22,7 +22,7 @@ cmd_doc = """
 
 Usage:
   {vcp_cmd} --ini INI [options]
-  {vcp_cmd} --install
+  {vcp_cmd} --install-sim
   {vcp_cmd} (-h | --help)
   {vcp_cmd} (-v | --version)
   {vcp_cmd} (-i | --info)
@@ -31,7 +31,7 @@ Required Arguments:
   --ini INI            Path to INI file, relative to ~/linuxcnc/configs.
 
 Commands:
-  --install            Installs LinuxCNC configs, data files etc. in the correct
+  --install-sim        Installs LinuxCNC configs, data files etc. in the correct
                        locations. This should always be run after updating.
 
 Display  Options:
@@ -93,10 +93,10 @@ def main(machine_type='plasma', opts=None):
                           vcp_name='Monokrome {}'.format(machine_type.capitalize()),
                           vcp_version=__version__)
 
-        if opts.install:
+        if opts.install_sim:
             lcnc_files = os.path.join(VCP_DIR, 'linuxcnc')
             if not os.path.isdir(lcnc_files):
-                lcnc_files = os.path.expanduser('~/.local/share/plasma_flat')
+                lcnc_files = os.path.expanduser('~/.local/share/monokrom')
 
             copy_tree(lcnc_files, os.path.expanduser('~/'), update=1)
             print "Successfully installed files."

@@ -1,2 +1,2 @@
-graft plasma_flat/*
-include plasma_flat/config.yml
+graft monokrom/*
+recursive-include monokrom/*/*.yml

@@ -16,9 +16,9 @@ Install Monokrom (includes lathe, mill and plasma VCPs)
 
 `pip install git+https://github.com/kurtjacobson/monokrom-vcp`
 
-To install the Plasma Flat LinuxCNC sim configs run 
+To install the Monokrom LinuxCNC sim configs run 
 
-`plasma-flat --install`
+`monokrom --install-sim`
 
 ## Acknowledgements
 

@@ -15,7 +15,7 @@ DATA_FILES = [
 
 # list of (destination, source_dir) tuples
 DATA_DIRS = [
-    ('share/monocrom/linuxcnc', 'linuxcnc/'),
+    ('share/monokrom/linuxcnc', 'linuxcnc/'),
 ]
 
 
