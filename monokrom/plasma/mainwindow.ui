@@ -385,72 +385,13 @@
               <property name="spacing">
                <number>10</number>
               </property>
-              <item row="3" column="1">
-               <widget class="QPushButton" name="pushButton_3">
-                <property name="text">
-                 <string>REVERSE
-RUN</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="checked">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="4" column="1">
-               <widget class="QPushButton" name="pushButton_8">
-                <property name="text">
-                 <string>THC
-ENABLE</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="checked">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="1">
-               <widget class="QPushButton" name="pushButton_2">
-                <property name="text">
-                 <string>M1
-BREAK</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="checked">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="2" column="0">
-               <widget class="QPushButton" name="pushButton_5">
-                <property name="text">
-                 <string>FEED
-HOLD</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="checked">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0" colspan="2">
-               <widget class="QPushButton" name="pushButton_6">
+              <item row="0" column="0" colspan="2">
+               <widget class="ActionButton" name="actionbutton_5">
                 <property name="text">
                  <string>CYCLE START</string>
                 </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="checked">
-                 <bool>false</bool>
+                <property name="actionName" stdset="0">
+                 <string>program.run</string>
                 </property>
                </widget>
               </item>
@@ -690,20 +631,6 @@ AND CUT</string>
                 </property>
                </widget>
               </item>
-              <item row="3" column="0">
-               <widget class="QPushButton" name="pushButton_4">
-                <property name="text">
-                 <string>STOP
-HAULT</string>
-                </property>
-                <property name="checkable">
-                 <bool>true</bool>
-                </property>
-                <property name="checked">
-                 <bool>false</bool>
-                </property>
-               </widget>
-              </item>
               <item row="6" column="0" colspan="2">
                <widget class="ActionButton" name="actionbutton_10">
                 <property name="text">
@@ -714,6 +641,64 @@ HAULT</string>
                 </property>
                 <property name="actionName" stdset="0">
                  <string>machine.power.toggle</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QPushButton" name="pushButton_8">
+                <property name="text">
+                 <string>THC
+ENABLE</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="ActionButton" name="actionbutton_6">
+                <property name="text">
+                 <string>FEED
+HOLD</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>program.pause</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="ActionButton" name="actionbutton_7">
+                <property name="text">
+                 <string>M1
+BREAK</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>program.optional-stop.toggle</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="ActionButton" name="actionbutton_8">
+                <property name="text">
+                 <string>STOP
+ABORT</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>program.abort</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="ActionButton" name="actionbutton_9">
+                <property name="text">
+                 <string>REVERSE
+RUN</string>
                 </property>
                </widget>
               </item>
