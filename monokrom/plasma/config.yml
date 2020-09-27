@@ -6,7 +6,7 @@ qtdesigner:
   qss_file: ( application.kwargs.stylesheet )
 
 vcp:
-  name: Monokrom Plasma
+  name: MonoKrom Plasma
   version: v0.0.1
   author: Kurt Jacobson
   description: >
