@@ -94,11 +94,11 @@ def main(machine_type='plasma', opts=None):
                           vcp_version=__version__)
 
         if opts.install_sim:
-            lcnc_files = os.path.join(VCP_DIR, 'linuxcnc')
-            if not os.path.isdir(lcnc_files):
-                lcnc_files = os.path.expanduser('~/.local/share/monokrom')
+            src = os.path.join(VCP_DIR, '../linuxcnc')
+            if not os.path.isdir(src):
+                src = os.path.expanduser('~/.local/share/monokrom/linuxcnc')
 
-            copy_tree(lcnc_files, os.path.expanduser('~/'), update=1)
+            copy_tree(src, os.path.expanduser('~/linuxcnc'), update=1)
             print "Successfully installed files."
             return
 
