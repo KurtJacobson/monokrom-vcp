@@ -1,4 +1,4 @@
-import os, sys
+import os
 from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
@@ -15,7 +15,7 @@ DATA_FILES = [
 
 # list of (destination, source_dir) tuples
 DATA_DIRS = [
-    ('share/plasma_flat/linuxcnc', 'linuxcnc/'),
+    ('share/monocrom/linuxcnc', 'linuxcnc/'),
 ]
 
 
@@ -36,15 +36,15 @@ data_files.extend(data_files_from_dirs(DATA_DIRS))
 
 
 setup(
-    name="plasma-flat",
+    name="monokrom-vcp",
     version="0.0.1",
     author="Kurt Jacobson",
     author_email="<doe.john@example.com>",
-    description="Plasma Flat - A QtPyVCP based Virtual Control Panel for LinuxCNC",
+    description="Monochrome style VCPs for LinuxCNC controlled Lathes, Mills and Plasma cutters.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/kurtjacobson/plasma-flat",
-    download_url="https://github.com/kurtjacobson/plsama-flat/tarball/master",
+    url="https://github.com/kurtjacobson/monokrom-vcp",
+    download_url="https://github.com/kurtjacobson/monokrom-vcp/tarball/master",
     packages=find_packages(),
     include_package_data=True,
     data_files=data_files,

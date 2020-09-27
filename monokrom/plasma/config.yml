@@ -6,7 +6,7 @@ qtdesigner:
   qss_file: ( application.kwargs.stylesheet )
 
 vcp:
-  name: Plasma Flat
+  name: Monokrom Plasma
   version: v0.0.1
   author: Kurt Jacobson
   description: >
@@ -31,14 +31,14 @@ windows:
   mainwindow:
     # Specify the class to use for the VCP's mainwindow
     #   Format: package.module:class
-    provider: plasma_flat.mainwindow:MainWindow
+    provider: monokrom.plasma.mainwindow:MainWindow
 
     # Keyword arguments to pass when initializing the class.
     kwargs:
       # Specify the mainwindow menubar as the default.
       menu: ( default_menubar )
       # Specify the UI file to load the window layout from.
-      ui_file: {{ file.dir }}/ui/plasma_flat.ui
+      ui_file: {{ file.dir }}/mainwindow.ui
       # Specify a stylesheet to use only for mainwindow.
       stylesheet: null
       # Set the window title from from the date in the vcp section above.
@@ -47,5 +47,5 @@ windows:
 application:
   kwargs:
     # Specify the application wide stylesheet.
-    stylesheet: {{ file.dir }}/ui/style.qss
-    custom_fonts: {{ file.dir }}/ui/fonts/ttf
+    stylesheet: {{ file.dir }}/style.qss
+    custom_fonts: {{ file.dir }}/../common/fonts/ttf

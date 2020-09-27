@@ -8,16 +8,16 @@ from qtpy.QtWidgets import QWidget, QVBoxLayout, QFrame
 from qtpyvcp.plugins import getPlugin
 
 BASE_PATH = os.path.join(os.path.dirname(__file__))
-UI_FILE = os.path.join(os.path.dirname(__file__), "composite_dro.ui")
+UI_FILE = os.path.join(os.path.dirname(__file__), "mk_dro.ui")
 
 ICON_PATH = os.path.join(BASE_PATH, 'icons')
 
 STATUS = getPlugin('status')
 
 
-class CompositeDroWidget(QWidget):
+class MonokromDroWidget(QWidget):
     def __init__(self, parent=None, axis_number=None):
-        super(CompositeDroWidget, self).__init__(parent)
+        super(MonokromDroWidget, self).__init__(parent)
 
         STATUS.homed.notify(self.updateHomedStatus)
 
@@ -85,9 +85,9 @@ class CompositeDroWidget(QWidget):
         return QPixmap(os.path.join(ICON_PATH, name))
 
 
-class CompositeDroGroup(QWidget):
+class MonokromDroGroup(QWidget):
     def __init__(self, parent=None):
-        super(CompositeDroGroup, self).__init__(parent)
+        super(MonokromDroGroup, self).__init__(parent)
 
         self.layout = QVBoxLayout(self)
         self.layout.setSpacing(8)
@@ -96,7 +96,7 @@ class CompositeDroGroup(QWidget):
         axes = STATUS.axis_mask.getValue(format='list') or [0, 1, 3]
 
         for anum in axes:
-            dro = CompositeDroWidget(self, anum)
+            dro = MonokromDroWidget(self, anum)
             self.layout.addWidget(dro)
 
         self.setLayout(self.layout)

@@ -58,36 +58,36 @@
 }
 
 /*===========================================================================*/
-/*                           Composite DRO                                   */
+/*                            Monokrom DRO                                   */
 /*===========================================================================*/
 
-.CompositeDroWidget {
+.MonokromDroWidget {
   min-width: 330px;
 }
 
-.CompositeDroWidget DROLineEdit {
+.MonokromDroWidget DROLineEdit {
   font: bold italic 30pt "DSEG7 Classic";
   border-color: transparent;
   background: transparent;
 }
 
-.CompositeDroWidget DROLineEdit:focus {
+.MonokromDroWidget DROLineEdit:focus {
   border-color: transparent;
   background: transparent;
   selection-background-color : green;
 }
 
-.CompositeDroWidget DROLineEdit:disabled {
+.MonokromDroWidget DROLineEdit:disabled {
   border-color: transparent;
   background: transparent;
 }
 
-.CompositeDroWidget > QFrame {
+.MonokromDroWidget > QFrame {
   border: $border;
   padding: 0px;
 }
 
-.CompositeDroWidget QPushButton {
+.MonokromDroWidget QPushButton {
   font-weight: normal;
   font-size: 28px;
   width: 1.3em;
@@ -97,18 +97,18 @@
   background: $border-color;
 }
 
-.CompositeDroWidget QLabel {
+.MonokromDroWidget QLabel {
   margin: 6px;
   border: $border;
   border-radius: 4px;
 }
 
-.CompositeDroWidget[axisHomed='false'] #homed_indicator {
+.MonokromDroWidget[axisHomed='false'] #homed_indicator {
   background-color: $background;
   // qproperty-icon: url(icons/unomed.png);
 }
 
-.CompositeDroWidget[axisHomed='true'] #homed_indicator {
+.MonokromDroWidget[axisHomed='true'] #homed_indicator {
   background-color: $border-color;
   // qproperty-icon: url(icons/homed.png);
 }

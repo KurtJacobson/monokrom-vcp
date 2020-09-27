@@ -82,16 +82,15 @@ import qtpyvcp
 from distutils.dir_util import copy_tree
 
 VCP_DIR = os.path.realpath(os.path.dirname(__file__))
-VCP_CONFIG_FILE = os.path.join(VCP_DIR, 'config.yml')
 
 
-def main(opts=None):
+def main(machine_type='plasma', opts=None):
 
     if opts is None:
         from qtpyvcp.utilities.opt_parser import parse_opts
         opts = parse_opts(doc=cmd_doc,
-                          vcp_cmd='plasma-flat',
-                          vcp_name='Plasma Flat',
+                          vcp_cmd='monokrome-{}'.format(machine_type),
+                          vcp_name='Monokrome {}'.format(machine_type.capitalize()),
                           vcp_version=__version__)
 
         if opts.install:
@@ -103,7 +102,10 @@ def main(opts=None):
             print "Successfully installed files."
             return
 
-    qtpyvcp.run_vcp(opts, VCP_CONFIG_FILE)
+    # choose the right config file for the machine type
+    config_file = os.path.join(VCP_DIR, machine_type, 'config.yml')
+
+    qtpyvcp.run_vcp(opts, config_file)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
-# Plasma Flat
+# Monokrom Virtual Control Panel
 
-Industrial Plasma GUI for LinuxCNC built with QtPyVCP.
+Monochrome style VCPs for LinuxCNC controlled Lathes, Mills and Plasma cutters.
 
 ![](docs/images/screenshot.png)
 
@@ -12,9 +12,9 @@ Install QtPyVCP
 
 `pip install qtpyvcp`
 
-Install Plasma Flat
+Install Monokrom (includes lathe, mill and plasma VCPs)
 
-`pip install git+https://github.com/kurtjacobson/plasma-flat`
+`pip install git+https://github.com/kurtjacobson/monokrom-vcp`
 
 To install the Plasma Flat LinuxCNC sim configs run 
 

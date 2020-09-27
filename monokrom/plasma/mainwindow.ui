@@ -154,8 +154,8 @@
             <widget class="QWidget" name="tab_4">
              <attribute name="icon">
               <iconset>
-               <normaloff>icons/crosshairs-solid.png</normaloff>
-               <normalon>icons/crosshairs-solid.on.png</normalon>icons/crosshairs-solid.png</iconset>
+               <normaloff>../common/icons/crosshairs-solid.png</normaloff>
+               <normalon>../common/icons/crosshairs-solid.bg.png</normalon>../common/icons/crosshairs-solid.png</iconset>
              </attribute>
              <attribute name="title">
               <string>WORK</string>
@@ -244,7 +244,7 @@
                </widget>
               </item>
               <item row="1" column="0" colspan="4">
-               <widget class="CompositeDroGroup" name="compositedrogroup_2">
+               <widget class="MonokromDroGroup" name="compositedrogroup_2">
                 <property name="maximumSize">
                  <size>
                   <width>10000</width>
@@ -272,8 +272,8 @@
                 </property>
                 <property name="icon">
                  <iconset>
-                  <normaloff>../widgets/composite_dro/icons/homed.png</normaloff>
-                  <disabledoff>icons/homed.png</disabledoff>../widgets/composite_dro/icons/homed.png</iconset>
+                  <normaloff>../common/icons/homed.png</normaloff>
+                  <disabledoff>../common/icons/homed.png</disabledoff>../common/icons/homed.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -291,10 +291,10 @@
             <widget class="QWidget" name="tab_3">
              <attribute name="icon">
               <iconset>
-               <normaloff>icons/crosshairs-solid.png</normaloff>
-               <normalon>icons/crosshairs-solid.on.png</normalon>
+               <normaloff>../common/icons/crosshairs-solid.png</normaloff>
+               <normalon>../common/icons/crosshairs-solid.bg.png</normalon>
                <activeoff>icons/crosshairs-solid.on.png</activeoff>
-               <selectedoff>icons/crosshairs-solid.on.png</selectedoff>icons/crosshairs-solid.png</iconset>
+               <selectedoff>icons/crosshairs-solid.on.png</selectedoff>../common/icons/crosshairs-solid.png</iconset>
              </attribute>
              <attribute name="title">
               <string>MACHINE</string>
@@ -518,7 +518,7 @@ HOLD</string>
                 <item row="0" column="1">
                  <widget class="ActionSlider" name="actionslider_2">
                   <property name="enabled">
-                   <bool>true</bool>
+                   <bool>false</bool>
                   </property>
                   <property name="sizePolicy">
                    <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
@@ -837,7 +837,7 @@ HAULT</string>
           <height>221</height>
          </rect>
         </property>
-        <widget class="QWidget" name="tabWidget_6Page1" native="true">
+        <widget class="QWidget" name="tabWidget_6Page1">
          <attribute name="title">
           <string>DRO FORMAT</string>
          </attribute>
@@ -930,7 +930,7 @@ HAULT</string>
           <height>91</height>
          </rect>
         </property>
-        <widget class="QWidget" name="tabWidget_7Page1" native="true">
+        <widget class="QWidget" name="tabWidget_7Page1">
          <attribute name="title">
           <string>USER INPUT</string>
          </attribute>
@@ -953,7 +953,7 @@ HAULT</string>
        <attribute name="title">
         <string>DIAGNOSTICS</string>
        </attribute>
-       <widget class="CompositeDroGroup" name="compositedrogroup_3">
+       <widget class="MonokromDroGroup" name="compositedrogroup_3">
         <property name="geometry">
          <rect>
           <x>10</x>
@@ -989,11 +989,6 @@ HAULT</string>
  </widget>
  <customwidgets>
   <customwidget>
-   <class>CompositeDroGroup</class>
-   <extends>QWidget</extends>
-   <header>plasma_flat.widgets.composite_dro.composite_dro</header>
-  </customwidget>
-  <customwidget>
    <class>ActionSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.action_slider</header>
@@ -1022,6 +1017,11 @@ HAULT</string>
    <class>GcodeTextEdit</class>
    <extends>QPlainTextEdit</extends>
    <header>qtpyvcp.widgets.input_widgets.gcode_text_edit</header>
+  </customwidget>
+  <customwidget>
+   <class>MonokromDroGroup</class>
+   <extends>QWidget</extends>
+   <header>monokrom.common.widgets.mk_dro.mk_dro</header>
   </customwidget>
   <customwidget>
    <class>VCPSettingsComboBox</class>
