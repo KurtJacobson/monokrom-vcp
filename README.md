@@ -1,4 +1,4 @@
-# Monokrom Virtual Control Panel
+# MONOKROM Virtual Control Panel
 
 Monochrome style VCPs for LinuxCNC controlled Lathes, Mills and Plasma cutters.
 
@@ -12,11 +12,11 @@ Install QtPyVCP
 
 `pip install qtpyvcp`
 
-Install Monokrom (includes lathe, mill and plasma VCPs)
+Install MONOKROM (includes lathe, mill and plasma VCPs)
 
 `pip install git+https://github.com/kurtjacobson/monokrom-vcp`
 
-To install the Monokrom LinuxCNC sim configs run 
+To install the MONOKROM LinuxCNC sim configs run 
 
 `monokrom --install-sim`
 
