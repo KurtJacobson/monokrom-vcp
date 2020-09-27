@@ -6,9 +6,19 @@ Industrial Plasma GUI for LinuxCNC built with QtPyVCP.
 
 ## Installation
 
-**Project URL:** https://github.com/kurtjacobson/plasma-flat  
-**Install Command:** `pip install git+https://github.com/kurtjacobson/plasma-flat`
+If you have not already done so, install the [QtPyVCP software dependencies](http://www.qtpyvcp.com/install/prerequisites.html#software-dependencies)
 
+Install QtPyVCP
+
+`pip install qtpyvcp`
+
+Install Plasma Flat
+
+`pip install git+https://github.com/kurtjacobson/plasma-flat`
+
+To install the Plasma Flat LinuxCNC sim configs run 
+
+`plasma-flat --install`
 
 ## Acknowledgements
 
