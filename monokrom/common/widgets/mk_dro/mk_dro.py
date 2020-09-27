@@ -19,17 +19,17 @@ class MonokromDroWidget(QWidget):
     def __init__(self, parent=None, axis_number=None):
         super(MonokromDroWidget, self).__init__(parent)
 
-        STATUS.homed.notify(self.updateHomedStatus)
-
-        uic.loadUi(UI_FILE, self)
-
         self._anum = 0
         self._aletter = 'x'
         self._style = ''
         self._homed = False
 
+        uic.loadUi(UI_FILE, self)
+
         if axis_number is not None:
             self.axisNumber = axis_number
+
+        STATUS.homed.notify(self.updateHomedStatus)
 
     @Property(int)
     def axisNumber(self):

@@ -654,9 +654,9 @@ QSizeGrip {
   min-height: 50px; }
 
 /*===========================================================================*/
-/*                            Monokrom DRO                                   */
+/*                            MonoKrom DRO                                   */
 /*===========================================================================*/
-.MonokromDroWidget {
+.MonoromDroWidget {
   min-width: 330px; }
 
 .MonokromDroWidget DROLineEdit {
@@ -685,6 +685,13 @@ QSizeGrip {
   border-radius: 0px;
   color: #16160e;
   background: #ffee06; }
+
+.MonokromDroWidget[styleClass="error"] > QFrame {
+  border-color: red; }
+
+.MonokromDroWidget[styleClass="error"] QPushButton {
+  background: red;
+  color: #ffee06; }
 
 .MonokromDroWidget QLabel {
   margin: 6px;

@@ -58,10 +58,10 @@
 }
 
 /*===========================================================================*/
-/*                            Monokrom DRO                                   */
+/*                            MonoKrom DRO                                   */
 /*===========================================================================*/
 
-.MonokromDroWidget {
+.MonoromDroWidget {
   min-width: 330px;
 }
 
@@ -95,6 +95,15 @@
   border-radius: 0px;
   color: $background;
   background: $border-color;
+}
+
+.MonokromDroWidget[styleClass="error"] > QFrame {
+  border-color: red;
+}
+
+.MonokromDroWidget[styleClass="error"] QPushButton {
+  background: red;
+  color: $border-color;
 }
 
 .MonokromDroWidget QLabel {
