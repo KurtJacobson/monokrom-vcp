@@ -33,3 +33,18 @@ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
     top: 1px;
     left: 1px;
 }
+
+
+QComboBox QAbstractItemView {
+  background: lighten($background, 4%);
+  border: 1px solid darken($background, 2%);
+}
+
+QComboBox QAbstractItemView:item {
+  color: red;
+  background: lighten($background, 5%);
+  border-radius: 3px;
+  min-height: 30px;
+  min-width: 150px;
+  padding: 0px 20px 0px 20px;
+}

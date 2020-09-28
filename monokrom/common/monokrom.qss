@@ -89,6 +89,33 @@ QToolButton:pressed {
 QToolButton:disabled {
   /* need to find a way to indicate disabled state */ }
 
+QCheckBox {
+  spacing: 15px;
+  margin-left: 20%;
+  margin-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px; }
+
+QCheckBox:disabled {
+  color: #8b820a;
+  background: transparent; }
+
+QCheckBox::indicator {
+  width: 20px;
+  height: 20px; }
+
+QCheckBox::indicator:unchecked {
+  image: url(icons/checkbox.unchecked.png); }
+
+QCheckBox::indicator:unchecked:disabled {
+  image: url(icons/checkbox.unchecked.disabled.png); }
+
+QCheckBox::indicator:checked {
+  image: url(icons/checkbox.checked.png); }
+
+QCheckBox::indicator:checked:disabled {
+  image: url(icons/checkbox.checked.disabled.png); }
+
 /*===========================================================================*/
 /*                              QComboBox                                    */
 /*===========================================================================*/
@@ -120,6 +147,18 @@ QComboBox::down-arrow:on {
   top: 1px;
   left: 1px; }
 
+QComboBox QAbstractItemView {
+  background: #222216;
+  border: 1px solid #10100a; }
+
+QComboBox QAbstractItemView:item {
+  color: red;
+  background: #262618;
+  border-radius: 3px;
+  min-height: 30px;
+  min-width: 150px;
+  padding: 0px 20px 0px 20px; }
+
 /*===========================================================================*/
 /*                              QLineEdit                                    */
 /*===========================================================================*/
@@ -138,25 +177,29 @@ QLineEdit:focus {
 /*===========================================================================*/
 QSpinBox,
 QDoubleSpinBox {
-  min-height: 25px;
-  min-width: 100px;
+  font: bold italic 15pt "DSEG7 Classic";
+  color: #16160e;
+  height: 30px;
+  max-height: 30px;
+  min-width: 150px;
   border: 2px solid #ffee06;
   border-radius: 8px;
-  background-color: #222216; }
-
-QSpinBox:focus,
-QDoubleSpinBox:focus {
-  border-color: #93935d; }
+  background-color: #ffee06; }
 
 QSpinBox[buttonSymbols="0"]::up-button,
 QSpinBox[buttonSymbols="1"]::up-button,
 QDoubleSpinBox[buttonSymbols="0"]::up-button,
 QDoubleSpinBox[buttonSymbols="1"]::up-button {
+  border: none;
   subcontrol-origin: margin;
   subcontrol-position: center right;
   width: 30px;
-  height: 15px;
-  border-left: 1px solid #f1e000; }
+  height: 30px; }
+
+QSpinBox::up-button:pressed,
+QDoubleSpinBox::up-button:pressed {
+  padding-top: 1px;
+  padding-right: -1px; }
 
 QSpinBox[buttonSymbols="0"]::up-arrow,
 QDoubleSpinBox[buttonSymbols="0"]::up-arrow {
@@ -164,7 +207,7 @@ QDoubleSpinBox[buttonSymbols="0"]::up-arrow {
 
 QSpinBox[buttonSymbols="1"]::up-arrow,
 QDoubleSpinBox[buttonSymbols="1"]::up-arrow {
-  image: url(icons/plus.png); }
+  image: url(icons/plus-round.png); }
 
 QSpinBox::up-arrow:off,
 QSpinBox::up-arrow:disabled,
@@ -172,15 +215,26 @@ QDoubleSpinBox::up-arrow:off,
 QDoubleSpinBox::up-arrow:disabled {
   /* off state when value is max */ }
 
+QSpinBox[buttonSymbols="1"]::up-arrow:off,
+QSpinBox[buttonSymbols="1"]::up-arrow:disabled,
+QDoubleSpinBox[buttonSymbols="1"]::up-arrow:off,
+QDoubleSpinBox[buttonSymbols="1"]::up-arrow:disabled {
+  image: url(icons/plus-round.disabled.png); }
+
 QSpinBox[buttonSymbols="0"]::down-button,
 QSpinBox[buttonSymbols="1"]::down-button,
 QDoubleSpinBox[buttonSymbols="0"]::down-button,
 QDoubleSpinBox[buttonSymbols="1"]::down-button {
+  border: none;
   subcontrol-origin: margin;
   subcontrol-position: center left;
   width: 30px;
-  height: 15px;
-  border-right: 1px solid #f1e000; }
+  height: 30px; }
+
+QSpinBox::down-button:pressed,
+QDoubleSpinBox::down-button:pressed {
+  padding-top: 1px;
+  padding-left: 1px; }
 
 QSpinBox[buttonSymbols="0"]::down-arrow,
 QDoubleSpinBox[buttonSymbols="0"]::down-arrow {
@@ -188,13 +242,17 @@ QDoubleSpinBox[buttonSymbols="0"]::down-arrow {
 
 QSpinBox[buttonSymbols="1"]::down-arrow,
 QDoubleSpinBox[buttonSymbols="1"]::down-arrow {
-  image: url(icons/minus.png); }
+  image: url(icons/minus-round.png); }
 
-QSpinBox::down-arrow:off,
-QSpinBox::down-arrow:disabled,
-QDoubleSpinBox::down-arrow:off,
-QDoubleSpinBox::down-arrow:disabled {
-  /* off state when value in min */ }
+QSpinBox[buttonSymbols="0"]::down-arrow:disabled,
+QDoubleSpinBox[buttonSymbols="0"]::down-arrow:disabled {
+  image: url(icons/arrow-down.disabled.png); }
+
+QSpinBox[buttonSymbols="1"]::down-arrow:off,
+QSpinBox[buttonSymbols="1"]::down-arrow:disabled,
+QDoubleSpinBox[buttonSymbols="1"]::down-arrow:off,
+QDoubleSpinBox[buttonSymbols="1"]::down-arrow:disabled {
+  image: url(icons/minus-round.disabled.png); }
 
 /*===========================================================================*/
 /*                             QScrollBar                                    */
@@ -591,7 +649,8 @@ QHeaderView::up-arrow {
 /*                                 QLabel                                    */
 /*===========================================================================*/
 QLabel {
-  padding: 2; }
+  padding: 2;
+  font-weight: bold; }
 
 QLabel[frameShape='6'] {
   background: #10100a;
@@ -696,7 +755,9 @@ QSizeGrip {
 .MonokromDroWidget QLabel {
   margin: 6px;
   border: 2px solid #ffee06;
-  border-radius: 4px; }
+  border-radius: 4px;
+  max-width: 20px;
+  max-height: 20px; }
 
 .MonokromDroWidget[axisHomed='false'] #homed_indicator {
   background-color: #16160e; }
@@ -704,11 +765,11 @@ QSizeGrip {
 .MonokromDroWidget[axisHomed='true'] #homed_indicator {
   background-color: #ffee06; }
 
-#file_frame {
+QFrame[styleClass="comboFrame"] {
   padding: 0px;
   border: 2px solid #ffee06; }
 
-#file_frame QLabel {
+QFrame[styleClass="comboFrame"] QLabel[styleClass="comboFrame"] {
   font-size: 14px;
   font-weight: bold;
   margin: 0px;
@@ -718,7 +779,7 @@ QSizeGrip {
   padding-left: 4px;
   height: 20px; }
 
-#file_frame QComboBox {
+QFrame[styleClass="comboFrame"] QComboBox {
   font-size: 14px;
   font-weight: bold;
   color: #16160e;
@@ -729,7 +790,7 @@ QSizeGrip {
   border-top: none;
   height: 20px; }
 
-#file_frame GcodeTextEdit {
+QFrame[styleClass="comboFrame"] GcodeTextEdit {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 1px; }
@@ -742,3 +803,6 @@ QSizeGrip {
 #mainTabWidget:tab-bar:bottom {
   border: 2px solid #ffee06;
   color: red; }
+
+QLabel {
+  background-color: #16160e; }

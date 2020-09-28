@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="584.49289"
-     inkscape:cy="916.89339"
+     inkscape:zoom="3.959798"
+     inkscape:cx="537.50785"
+     inkscape:cy="806.95768"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -412,7 +412,7 @@
        inkscape:connector-curvature="0"
        id="crosshairs-solid"
        d="m 551.416,124.12334 h -1.42322 a 10.131593,10.131602 0 0 0 -8.51998,-8.52 v -1.4172 a 0.56279961,0.56280009 0 0 0 -0.55677,-0.5628 h -1.87441 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5628 v 1.4232 a 10.131593,10.131602 0 0 0 -8.51999,8.52 h -1.41723 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5568 v 1.8756 a 0.56279961,0.56280009 0 0 0 0.5628,0.56281 h 1.42322 a 10.131593,10.131602 0 0 0 8.51998,8.51999 v 1.4232 a 0.56279961,0.56280009 0 0 0 0.55682,0.5556 h 1.87558 a 0.56279961,0.56280009 0 0 0 0.5628,-0.5628 v -1.4232 a 10.131593,10.131602 0 0 0 8.52,-8.52 h 1.4232 a 0.56279961,0.56280009 0 0 0 0.5556,-0.5568 v -1.8744 a 0.56279961,0.56280009 0 0 0 -0.5628,-0.5628 z m -9.93717,8.4672 v -1.9044 a 0.56279961,0.56280009 0 0 0 -0.5628,-0.5628 h -1.87441 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5628 v 1.9044 a 7.132795,7.1328012 0 0 1 -5.46719,-5.4672 h 1.90439 a 0.56279961,0.56280009 0 0 0 0.5628,-0.5628 v -1.8744 a 0.56279961,0.56280009 0 0 0 -0.5628,-0.5628 h -1.90439 a 7.132795,7.1328012 0 0 1 5.46719,-5.4672 v 1.9044 a 0.56279961,0.56280009 0 0 0 0.5628,0.5628 h 1.87558 a 0.56279961,0.56280009 0 0 0 0.5628,-0.5628 v -1.9044 a 7.132795,7.1328012 0 0 1 5.46602,5.4672 h -1.90444 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5628 v 1.8756 a 0.56279961,0.56280009 0 0 0 0.5628,0.56281 h 1.90444 a 7.132795,7.1328012 0 0 1 -5.46719,5.46599 z m 0,-6.9672 a 1.499999,1.5000003 0 1 1 -1.50001,-1.5 1.499999,1.5000003 0 0 1 1.50001,1.5 z"
-       style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.19999957;stroke-opacity:1"
+       style="fill:#16160e;fill-opacity:1;stroke:none;stroke-width:1.19999957;stroke-opacity:1"
        inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/plasma_flat/ui/icons/crosshairs-solid.on.png"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
@@ -422,39 +422,39 @@
        data-name="home-solid"
        class="cls-4"
        d="M 587.68186,120.62328 580,126.95122 v 6.82965 a 0.66736152,0.66736152 0 0 0 0.66736,0.66736 l 4.67033,-0.0122 a 0.66736152,0.66736152 0 0 0 0.66376,-0.66734 v -3.98857 a 0.66736152,0.66736152 0 0 1 0.66736,-0.66736 h 2.66705 a 0.66736152,0.66736152 0 0 1 0.66736,0.66736 v 3.98617 a 0.66736152,0.66736152 0 0 0 0.66736,0.66856 l 4.66913,0.01 a 0.66736152,0.66736152 0 0 0 0.66736,-0.66738 v -6.83084 l -7.68186,-6.32313 a 0.50772289,0.50772289 0 0 0 -0.63735,0 z m 12.13613,4.30064 -3.48084,-2.87229 v -5.771 a 0.50052115,0.50052115 0 0 0 -0.50052,-0.50052 h -2.33697 a 0.50052115,0.50052115 0 0 0 -0.50052,0.50052 v 3.02594 l -3.7305,-3.07035 a 2.0008843,2.0008843 0 0 0 -2.54222,0 l -10.54815,8.6877 a 0.50052115,0.50052115 0 0 0 -0.0672,0.70458 l 1.06225,1.29151 a 0.50052115,0.50052115 0 0 0 0.70457,0.0684 l 9.80398,-8.07435 a 0.50772289,0.50772289 0 0 1 0.63735,0 l 9.80277,8.07435 a 0.50052115,0.50052115 0 0 0 0.69857,-0.0672 l 1.06226,-1.29151 a 0.50052115,0.50052115 0 0 0 -0.0708,-0.70578 z"
-       style="fill:#000008;fill-opacity:1;stroke-width:1.20029044"
+       style="fill:#16160e;fill-opacity:1;stroke-width:1.20029044"
        inkscape:export-xdpi="96"
        inkscape:export-ydpi="96" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#16160e;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 529.62801,156.45755 10.55511,-10.55511 10.5551,10.55511 v 0"
        id="path884"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/plasma_flat/ui/icons/arrow-up.png"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-up.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#16160e;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 550.73418,168.82144 -10.55511,10.55511 -10.5551,-10.55511 v 0"
        id="path884-3"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/plasma_flat/ui/icons/arrow-down.png"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-down.png"
        inkscape:export-xdpi="47.921444"
        inkscape:export-ydpi="47.921444" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#16160e;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 582.37868,138.9747 10.55511,10.55511 -10.55511,10.5551 v 0"
        id="path884-3-6"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/plasma_flat/ui/icons/arrow-right.png"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-right.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="fill:none;stroke:#16160e;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        d="m 593.18634,184.32857 -10.55511,-10.55511 10.55511,-10.5551 v 0"
        id="path884-3-7"
        inkscape:connector-curvature="0"
-       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/plasma_flat/ui/icons/arrow-left.png"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-left.png"
        inkscape:export-xdpi="48"
        inkscape:export-ydpi="48" />
     <path
@@ -465,5 +465,225 @@
        d="m 527.416,124.06181 h -1.42322 a 10.131593,10.131602 0 0 0 -8.51998,-8.52 v -1.4172 a 0.56279961,0.56280009 0 0 0 -0.55677,-0.5628 h -1.87441 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5628 v 1.4232 a 10.131593,10.131602 0 0 0 -8.51999,8.52 h -1.41723 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5568 v 1.8756 a 0.56279961,0.56280009 0 0 0 0.5628,0.56281 h 1.42322 a 10.131593,10.131602 0 0 0 8.51998,8.51999 v 1.4232 a 0.56279961,0.56280009 0 0 0 0.55682,0.5556 h 1.87558 a 0.56279961,0.56280009 0 0 0 0.5628,-0.5628 v -1.4232 a 10.131593,10.131602 0 0 0 8.52,-8.52 h 1.4232 a 0.56279961,0.56280009 0 0 0 0.5556,-0.5568 v -1.8744 a 0.56279961,0.56280009 0 0 0 -0.5628,-0.5628 z m -9.93717,8.4672 v -1.9044 a 0.56279961,0.56280009 0 0 0 -0.5628,-0.5628 h -1.87441 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5628 v 1.9044 a 7.132795,7.1328012 0 0 1 -5.46719,-5.4672 h 1.90439 a 0.56279961,0.56280009 0 0 0 0.5628,-0.5628 v -1.8744 a 0.56279961,0.56280009 0 0 0 -0.5628,-0.5628 h -1.90439 a 7.132795,7.1328012 0 0 1 5.46719,-5.4672 v 1.9044 a 0.56279961,0.56280009 0 0 0 0.5628,0.5628 h 1.87558 a 0.56279961,0.56280009 0 0 0 0.5628,-0.5628 v -1.9044 a 7.132795,7.1328012 0 0 1 5.46602,5.4672 h -1.90444 a 0.56279961,0.56280009 0 0 0 -0.5628,0.5628 v 1.8756 a 0.56279961,0.56280009 0 0 0 0.5628,0.56281 h 1.90444 a 7.132795,7.1328012 0 0 1 -5.46719,5.46599 z m 0,-6.9672 a 1.499999,1.5000003 0 1 1 -1.50001,-1.5 1.499999,1.5000003 0 0 1 1.50001,1.5 z"
        id="path1050"
        inkscape:connector-curvature="0" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#16160e;stroke-width:1.20000017"
+       id="minus-circle-solid-16"
+       data-name="minus-circle-solid"
+       d="m 540.21323,185.60334 a 12,12 0 1 0 12,12 12,12 0 0 0 -12,-12 z m -6.3876,13.93562 a 0.582,0.582 0 0 1 -0.5808,-0.58081 v -2.7096 a 0.582,0.582 0 0 1 0.5808,-0.5808 h 12.7752 a 0.582,0.582 0 0 1 0.5808,0.5808 v 2.7096 a 0.582,0.582 0 0 1 -0.5808,0.58081 z"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/minus-round.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#16160e;stroke-width:1.20000005"
+       id="plus-circle-solid-16"
+       data-name="plus-circle-solid"
+       d="m 588.78572,185.60334 a 12,12 0 1 0 12,12 12,12 0 0 0 -12,-12 z m 6.9672,13.3548 a 0.582,0.582 0 0 1 -0.5808,0.5808 h -4.452 v 4.452 a 0.582,0.582 0 0 1 -0.5808,0.5808 h -2.7084 a 0.582,0.582 0 0 1 -0.5808,-0.5808 v -4.452 h -4.452 a 0.582,0.582 0 0 1 -0.5808,-0.5808 v -2.7096 a 0.582,0.582 0 0 1 0.5808,-0.5808 h 4.452 v -4.452 a 0.582,0.582 0 0 1 0.5808,-0.5808 h 2.7096 a 0.582,0.582 0 0 1 0.5808,0.5808 v 4.452 h 4.452 a 0.582,0.582 0 0 1 0.5808,0.5808 z"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/plus-round.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#16160e;stroke-width:1.20000017;opacity:0.5"
+       id="minus-circle-solid-16-3"
+       data-name="minus-circle-solid"
+       d="m 539.63142,209.60334 a 12,12 0 1 0 12,12 12,12 0 0 0 -12,-12 z m -6.3876,13.93562 a 0.582,0.582 0 0 1 -0.5808,-0.58081 v -2.7096 a 0.582,0.582 0 0 1 0.5808,-0.5808 h 12.7752 a 0.582,0.582 0 0 1 0.5808,0.5808 v 2.7096 a 0.582,0.582 0 0 1 -0.5808,0.58081 z"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/minus-round.disabled.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#16160e;stroke-width:1.20000005;opacity:0.5"
+       id="plus-circle-solid-16-6"
+       data-name="plus-circle-solid"
+       d="m 588.20391,209.60334 a 12,12 0 1 0 12,12 12,12 0 0 0 -12,-12 z m 6.9672,13.3548 a 0.582,0.582 0 0 1 -0.5808,0.5808 h -4.452 v 4.452 a 0.582,0.582 0 0 1 -0.5808,0.5808 h -2.7084 a 0.582,0.582 0 0 1 -0.5808,-0.5808 v -4.452 h -4.452 a 0.582,0.582 0 0 1 -0.5808,-0.5808 v -2.7096 a 0.582,0.582 0 0 1 0.5808,-0.5808 h 4.452 v -4.452 a 0.582,0.582 0 0 1 0.5808,-0.5808 h 2.7096 a 0.582,0.582 0 0 1 0.5808,0.5808 v 4.452 h 4.452 a 0.582,0.582 0 0 1 0.5808,0.5808 z"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/plus-round.disabled.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g941"
+       transform="matrix(0.8,0,0,0.8,115.2,51.520668)"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/checkbox.checked.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         transform="translate(546,257.60334)"
+         data-name="Rectangle 83"
+         id="Rectangle_83-2"
+         style="fill:#ffee06;stroke:#ffee06;stroke-width:2">
+        <rect
+           id="rect571"
+           rx="10"
+           height="30"
+           width="30"
+           x="0"
+           y="0"
+           style="stroke:none" />
+        <rect
+           id="rect573"
+           rx="9"
+           height="28"
+           width="28"
+           y="1"
+           x="1"
+           style="fill:none" />
+      </g>
+      <path
+         d="m 557.793,280.22534 -6.5,-6.5 a 1,1 0 0 1 0,-1.414 l 1.414,-1.414 a 1,1 0 0 1 1.414,0 l 4.379,4.378 9.379,-9.379 a 1,1 0 0 1 1.414,0 l 1.414,1.414 a 1,1 0 0 1 0,1.414 l -11.5,11.5 a 1,1 0 0 1 -1.414,0 z"
+         id="check-solid"
+         inkscape:connector-curvature="0" />
+    </g>
+    <g
+       style="fill:none;stroke:#ffee06;stroke-width:2"
+       id="Rectangle_84"
+       data-name="Rectangle 84"
+       transform="matrix(0.8,0,0,0.8,516.69542,257.60334)"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/checkbox.unchecked.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="stroke:none"
+         y="0"
+         x="0"
+         width="30"
+         height="30"
+         rx="10"
+         id="rect591" />
+      <rect
+         style="fill:none"
+         x="1"
+         y="1"
+         width="28"
+         height="28"
+         rx="9"
+         id="rect593" />
+    </g>
+    <g
+       id="g999"
+       transform="translate(-8.0812204,-0.4)"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/checkbox.pressed.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <g
+         style="opacity:0.5"
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/checkbox.checked.png"
+         transform="matrix(0.8,0,0,0.8,159.0593,51.920668)"
+         id="g941-7">
+        <g
+           style="fill:#ffee06;stroke:#ffee06;stroke-width:2"
+           id="Rectangle_83-2-5"
+           data-name="Rectangle 83"
+           transform="translate(546,257.60334)">
+          <rect
+             style="stroke:none"
+             y="0"
+             x="0"
+             width="30"
+             height="30"
+             rx="10"
+             id="rect571-3" />
+          <rect
+             style="fill:none"
+             x="1"
+             y="1"
+             width="28"
+             height="28"
+             rx="9"
+             id="rect573-5" />
+        </g>
+        <path
+           inkscape:connector-curvature="0"
+           id="check-solid-6"
+           d="m 557.793,280.22534 -6.5,-6.5 a 1,1 0 0 1 0,-1.414 l 1.414,-1.414 a 1,1 0 0 1 1.414,0 l 4.379,4.378 9.379,-9.379 a 1,1 0 0 1 1.414,0 l 1.414,1.414 a 1,1 0 0 1 0,1.414 l -11.5,11.5 a 1,1 0 0 1 -1.414,0 z" />
+      </g>
+      <g
+         inkscape:export-ydpi="96"
+         inkscape:export-xdpi="96"
+         inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/checkbox.unchecked.png"
+         transform="matrix(0.8,0,0,0.8,595.8593,258.00334)"
+         data-name="Rectangle 84"
+         id="Rectangle_84-2"
+         style="fill:none;stroke:#ffee06;stroke-width:2">
+        <rect
+           id="rect591-9"
+           rx="10"
+           height="30"
+           width="30"
+           x="0"
+           y="0"
+           style="stroke:none" />
+        <rect
+           id="rect593-1"
+           rx="9"
+           height="28"
+           width="28"
+           y="1"
+           x="1"
+           style="fill:none" />
+      </g>
+    </g>
+    <g
+       id="g941-2"
+       transform="matrix(0.8,0,0,0.8,116,76.320668)"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/checkbox.checked.disabled.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       style="opacity:0.5">
+      <g
+         transform="translate(546,257.60334)"
+         data-name="Rectangle 83"
+         id="Rectangle_83-2-7"
+         style="fill:#ffee06;stroke:#ffee06;stroke-width:2">
+        <rect
+           id="rect571-0"
+           rx="10"
+           height="30"
+           width="30"
+           x="0"
+           y="0"
+           style="stroke:none" />
+        <rect
+           id="rect573-9"
+           rx="9"
+           height="28"
+           width="28"
+           y="1"
+           x="1"
+           style="fill:none" />
+      </g>
+      <path
+         d="m 557.793,280.22534 -6.5,-6.5 a 1,1 0 0 1 0,-1.414 l 1.414,-1.414 a 1,1 0 0 1 1.414,0 l 4.379,4.378 9.379,-9.379 a 1,1 0 0 1 1.414,0 l 1.414,1.414 a 1,1 0 0 1 0,1.414 l -11.5,11.5 a 1,1 0 0 1 -1.414,0 z"
+         id="check-solid-3"
+         inkscape:connector-curvature="0"
+         style="" />
+    </g>
+    <g
+       style="fill:none;stroke:#ffee06;stroke-width:2;opacity:0.5"
+       id="Rectangle_84-6"
+       data-name="Rectangle 84"
+       transform="matrix(0.8,0,0,0.8,516.05725,282.40334)"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/checkbox.unchecked.disabled.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <rect
+         style="stroke:none"
+         y="0"
+         x="0"
+         width="30"
+         height="30"
+         rx="10"
+         id="rect591-0" />
+      <rect
+         style="fill:none"
+         x="1"
+         y="1"
+         width="28"
+         height="28"
+         rx="9"
+         id="rect593-6" />
+    </g>
   </g>
 </svg>

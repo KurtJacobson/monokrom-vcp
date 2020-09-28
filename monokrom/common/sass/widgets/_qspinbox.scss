@@ -4,37 +4,41 @@
 
 QSpinBox,
 QDoubleSpinBox {
-    min-height: 25px;
-    min-width: 100px;
-    border: $border;
-    border-radius: $border-radius;
-    background-color: lighten($background, 4%);
+  font: bold italic 15pt "DSEG7 Classic";
+  color: $background;
+  height: 30px;
+  max-height: 30px;
+  min-width: 150px;
+  border: $border;
+  border-radius: $border-radius;
+  background-color: $border-color;
 }
 
 QSpinBox:focus,
 QDoubleSpinBox:focus {
-    border-color: lighten($background, 40%);
+
 }
 
 QSpinBox[buttonSymbols="0"]::up-button,
 QSpinBox[buttonSymbols="1"]::up-button,
 QDoubleSpinBox[buttonSymbols="0"]::up-button,
 QDoubleSpinBox[buttonSymbols="1"]::up-button {
+    border: none;
     subcontrol-origin: margin;
     subcontrol-position: center right;
     width: 30px;
-    height: 15px;
-    border-left: 1px solid darken($border-color, 4%);
+    height: 30px;
 }
 
 QSpinBox::up-bottom:hover,
 QDoubleSpinBox::up-button:hover {
-
+  // background: lighten($border-color, 20%);
 }
 
 QSpinBox::up-button:pressed,
 QDoubleSpinBox::up-button:pressed {
-
+  padding-top: 1px;
+  padding-right: -1px;
 }
 
 // buttonSymbols="QAbstractSpinBox::UpDownArrows"
@@ -46,7 +50,7 @@ QDoubleSpinBox[buttonSymbols="0"]::up-arrow {
 // buttonSymbols="QAbstractSpinBox::PlusMinus"
 QSpinBox[buttonSymbols="1"]::up-arrow,
 QDoubleSpinBox[buttonSymbols="1"]::up-arrow {
-    image: url(icons/plus.png);
+    image: url(icons/plus-round.png);
 }
 
 QSpinBox::up-arrow:off,
@@ -56,15 +60,23 @@ QDoubleSpinBox::up-arrow:disabled { /* off state when value is max */
 
 }
 
+// buttonSymbols="QAbstractSpinBox::PlusMinus"
+QSpinBox[buttonSymbols="1"]::up-arrow:off,
+QSpinBox[buttonSymbols="1"]::up-arrow:disabled,
+QDoubleSpinBox[buttonSymbols="1"]::up-arrow:off,
+QDoubleSpinBox[buttonSymbols="1"]::up-arrow:disabled {
+    image: url(icons/plus-round.disabled.png);
+}
+
 QSpinBox[buttonSymbols="0"]::down-button,
 QSpinBox[buttonSymbols="1"]::down-button,
 QDoubleSpinBox[buttonSymbols="0"]::down-button,
 QDoubleSpinBox[buttonSymbols="1"]::down-button {
+    border: none;
     subcontrol-origin: margin;
     subcontrol-position: center left;
     width: 30px;
-    height: 15px;
-    border-right: 1px solid darken($border-color, 4%);
+    height: 30px;
 }
 
 QSpinBox::down-button:hover,
@@ -74,7 +86,8 @@ QDoubleSpinBox::down-button:hover {
 
 QSpinBox::down-button:pressed,
 QDoubleSpinBox::down-button:pressed {
-
+  padding-top: 1px;
+  padding-left: 1px;
 }
 
 // buttonSymbols="QAbstractSpinBox::UpDownArrows"
@@ -86,12 +99,19 @@ QDoubleSpinBox[buttonSymbols="0"]::down-arrow {
 // buttonSymbols="QAbstractSpinBox::PlusMinus"
 QSpinBox[buttonSymbols="1"]::down-arrow,
 QDoubleSpinBox[buttonSymbols="1"]::down-arrow {
-    image: url(icons/minus.png);
+    image: url(icons/minus-round.png);
 }
 
-QSpinBox::down-arrow:off,
-QSpinBox::down-arrow:disabled,
-QDoubleSpinBox::down-arrow:off,
-QDoubleSpinBox::down-arrow:disabled { /* off state when value in min */
+// buttonSymbols="QAbstractSpinBox::UpDownArrows"
+QSpinBox[buttonSymbols="0"]::down-arrow:disabled,
+QDoubleSpinBox[buttonSymbols="0"]::down-arrow:disabled {
+    image: url(icons/arrow-down.disabled.png);
+}
 
+// buttonSymbols="QAbstractSpinBox::PlusMinus"
+QSpinBox[buttonSymbols="1"]::down-arrow:off,
+QSpinBox[buttonSymbols="1"]::down-arrow:disabled,
+QDoubleSpinBox[buttonSymbols="1"]::down-arrow:off,
+QDoubleSpinBox[buttonSymbols="1"]::down-arrow:disabled {
+    image: url(icons/minus-round.disabled.png);
 }

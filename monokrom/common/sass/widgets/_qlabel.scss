@@ -3,7 +3,9 @@
 /*===========================================================================*/
 
 QLabel {
-  padding: 2
+  padding: 2;
+  font-weight: bold;
+  // background: $background;
 }
 
 QLabel[frameShape='6'] { // styled panel
