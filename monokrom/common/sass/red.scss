@@ -1,0 +1,27 @@
+// Change default values
+
+// Fonts
+$font-stack: Noto Sans !default;
+
+// Standard Colors
+$text-color: rgb(114, 114, 113);
+$background: rgb(22, 22, 14);
+$border-color: rgb(255, 0, 0);
+$layout-border-color: lighten($background, 6%);
+
+// Hover Colors
+$hover-text-color: $text-color;
+$hover-background: lighten($background, 6%);
+$hover-border-color: $border-color;
+
+// Disabled Colors
+$disabled-text-color: darken($text-color, 5%);
+$disabled-background: lighten($background, 2%);
+$disabled-border-color: lighten($background, 7%);
+
+// Borders
+$border-radius: 3px;
+$border: 1px solid $border-color;
+
+// Import base style
+@import 'base';
