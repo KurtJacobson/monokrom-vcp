@@ -18,4 +18,3 @@ class MonokromDroWidget_Plugin(_DesignerPlugin):
 class MonokromDroGroup_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MonokromDroGroup
-

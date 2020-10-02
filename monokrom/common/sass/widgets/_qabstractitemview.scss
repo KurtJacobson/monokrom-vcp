@@ -8,7 +8,7 @@ QAbstractItemView {
     alternate-background-color: lighten($background, 2%);
     border: $border;
     border-color: $layout-border-color;
-    border-radius: 8px;
+    // border-radius: 8px;
 }
 
 QAbstractItemView::item {

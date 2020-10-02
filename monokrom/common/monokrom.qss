@@ -147,17 +147,22 @@ QComboBox::down-arrow:on {
   top: 1px;
   left: 1px; }
 
-QComboBox QAbstractItemView {
-  background: #222216;
-  border: 1px solid #10100a; }
-
-QComboBox QAbstractItemView:item {
-  color: red;
+QComboBox:item {
+  color: #ffee06;
+  font-weight: normal;
   background: #262618;
-  border-radius: 3px;
-  min-height: 30px;
-  min-width: 150px;
-  padding: 0px 20px 0px 20px; }
+  max-height: 25px;
+  padding-left: 20px; }
+
+QComboBox:item:checked {
+  font-weight: bold; }
+
+QComboBox QListView {
+  border-radius: 0px; }
+
+QComboBox QListView:checked {
+  border-radius: 0px;
+  color: red; }
 
 /*===========================================================================*/
 /*                              QLineEdit                                    */
@@ -547,8 +552,7 @@ QAbstractItemView {
   background-color: #262618;
   alternate-background-color: #1c1c12;
   border: 2px solid #ffee06;
-  border-color: #29291a;
-  border-radius: 8px; }
+  border-color: #29291a; }
 
 QAbstractItemView::item {
   color: #ffee06;
@@ -617,8 +621,9 @@ QMenuBar::item:selected {
 /*                             QHeaderView                                   */
 /*===========================================================================*/
 QHeaderView {
+  margin: -4px;
   min-height: 20px;
-  background-color: #16160e;
+  background-color: #ffee06;
   border-style: solid;
   border-color: transparent;
   border-bottom: 2px solid #ffee06;
@@ -627,13 +632,15 @@ QHeaderView {
   border-bottom-right-radius: 0px; }
 
 QHeaderView::section {
-  background-color: #16160e;
-  padding-left: 5px;
+  font-weight: bold;
+  color: #16160e;
+  background-color: #ffee06;
+  padding-left: 0px;
   text-align: center;
-  border: 1px solid transparent;
+  border: 0px solid transparent;
   margin-top: 2px;
   margin-bottom: 2px;
-  border-right: 1px solid #f1e000; }
+  border-right: 1px solid #8b820a; }
 
 QHeaderView::section:last {
   border-right: 1px solid transparent; }
@@ -644,6 +651,10 @@ QHeaderView::down-arrow {
 
 QHeaderView::up-arrow {
   image: url(icons/arrow-up.png); }
+
+QTableView {
+  border: 2px solid #ffee06;
+  padding: 2px; }
 
 /*===========================================================================*/
 /*                                 QLabel                                    */
