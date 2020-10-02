@@ -26,6 +26,9 @@ data_plugins:
     kwargs:
       cycle_time: 50
 
+  plasmac_material:
+    provider: monokrom.plasma.plugins.material_settings:MaterialSettings
+
 windows:
 
   mainwindow:

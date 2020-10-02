@@ -21,7 +21,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>../common/icons/icon.png</normaloff>../common/icons/icon.png</iconset>
+    <normaloff>../../../../../../../../.designer/common/icons/icon.png</normaloff>../../../../../../../../.designer/common/icons/icon.png</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QHBoxLayout" name="horizontalLayout">
@@ -46,7 +46,7 @@
        <enum>QTabWidget::South</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -178,8 +178,8 @@
             <widget class="QWidget" name="tab_4">
              <attribute name="icon">
               <iconset>
-               <normaloff>../common/icons/crosshairs-solid.png</normaloff>
-               <normalon>../common/icons/crosshairs-solid.bg.png</normalon>../common/icons/crosshairs-solid.png</iconset>
+               <normaloff>../../../../../../../../.designer/common/icons/crosshairs-solid.png</normaloff>
+               <normalon>../../../../../../../../.designer/common/icons/crosshairs-solid.bg.png</normalon>../../../../../../../../.designer/common/icons/crosshairs-solid.png</iconset>
              </attribute>
              <attribute name="title">
               <string>WORK</string>
@@ -296,8 +296,8 @@
                 </property>
                 <property name="icon">
                  <iconset>
-                  <normaloff>../common/icons/homed.png</normaloff>
-                  <disabledoff>../common/icons/homed.png</disabledoff>../common/icons/homed.png</iconset>
+                  <normaloff>../../../../../../../../.designer/common/icons/homed.png</normaloff>
+                  <disabledoff>../../../../../../../../.designer/common/icons/homed.png</disabledoff>../../../../../../../../.designer/common/icons/homed.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -315,10 +315,10 @@
             <widget class="QWidget" name="tab_3">
              <attribute name="icon">
               <iconset>
-               <normaloff>../common/icons/crosshairs-solid.png</normaloff>
-               <normalon>../common/icons/crosshairs-solid.bg.png</normalon>
-               <activeoff>icons/crosshairs-solid.on.png</activeoff>
-               <selectedoff>icons/crosshairs-solid.on.png</selectedoff>../common/icons/crosshairs-solid.png</iconset>
+               <normaloff>../../../../../../../../.designer/common/icons/crosshairs-solid.png</normaloff>
+               <normalon>../../../../../../../../.designer/common/icons/crosshairs-solid.bg.png</normalon>
+               <activeoff>../../../../../../../../.designer/backup/icons/crosshairs-solid.on.png</activeoff>
+               <selectedoff>../../../../../../../../.designer/backup/icons/crosshairs-solid.on.png</selectedoff>../../../../../../../../.designer/common/icons/crosshairs-solid.png</iconset>
              </attribute>
              <attribute name="title">
               <string>MACHINE</string>
@@ -903,8 +903,8 @@ RUN</string>
             <widget class="QWidget" name="tab_10">
              <attribute name="icon">
               <iconset>
-               <normaloff>../common/icons/crosshairs-solid.png</normaloff>
-               <normalon>../common/icons/crosshairs-solid.bg.png</normalon>../common/icons/crosshairs-solid.png</iconset>
+               <normaloff>../../../../../../../../.designer/common/icons/crosshairs-solid.png</normaloff>
+               <normalon>../../../../../../../../.designer/common/icons/crosshairs-solid.bg.png</normalon>../../../../../../../../.designer/common/icons/crosshairs-solid.png</iconset>
              </attribute>
              <attribute name="title">
               <string>WORK</string>
@@ -1021,8 +1021,8 @@ RUN</string>
                 </property>
                 <property name="icon">
                  <iconset>
-                  <normaloff>../common/icons/homed.png</normaloff>
-                  <disabledoff>../common/icons/homed.png</disabledoff>../common/icons/homed.png</iconset>
+                  <normaloff>../../../../../../../../.designer/common/icons/homed.png</normaloff>
+                  <disabledoff>../../../../../../../../.designer/common/icons/homed.png</disabledoff>../../../../../../../../.designer/common/icons/homed.png</iconset>
                 </property>
                 <property name="iconSize">
                  <size>
@@ -1040,10 +1040,10 @@ RUN</string>
             <widget class="QWidget" name="tab_11">
              <attribute name="icon">
               <iconset>
-               <normaloff>../common/icons/crosshairs-solid.png</normaloff>
-               <normalon>../common/icons/crosshairs-solid.bg.png</normalon>
-               <activeoff>icons/crosshairs-solid.on.png</activeoff>
-               <selectedoff>icons/crosshairs-solid.on.png</selectedoff>../common/icons/crosshairs-solid.png</iconset>
+               <normaloff>../../../../../../../../.designer/common/icons/crosshairs-solid.png</normaloff>
+               <normalon>../../../../../../../../.designer/common/icons/crosshairs-solid.bg.png</normalon>
+               <activeoff>../../../../../../../../.designer/backup/icons/crosshairs-solid.on.png</activeoff>
+               <selectedoff>../../../../../../../../.designer/backup/icons/crosshairs-solid.on.png</selectedoff>../../../../../../../../.designer/common/icons/crosshairs-solid.png</iconset>
              </attribute>
              <attribute name="title">
               <string>MACHINE</string>
@@ -1434,6 +1434,9 @@ RUN</string>
              </layout>
             </item>
             <item>
+             <widget class="PlasmaRunSettings" name="plasmarunsettings"/>
+            </item>
+            <item>
              <layout class="QVBoxLayout" name="verticalLayout_13">
               <item>
                <widget class="MkTabWidget" name="tabWidget_11">
@@ -1662,6 +1665,87 @@ T</string>
                  <attribute name="title">
                   <string>CUTTING MODE</string>
                  </attribute>
+                 <widget class="VCPSettingsSpinBox" name="settings_spinbox">
+                  <property name="geometry">
+                   <rect>
+                    <x>80</x>
+                    <y>80</y>
+                    <width>154</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="settingName" stdset="0">
+                   <string>plasmac.material.pierce_height</string>
+                  </property>
+                 </widget>
+                 <widget class="VCPSettingsDoubleSpinBox" name="settings_double_spinbox">
+                  <property name="geometry">
+                   <rect>
+                    <x>80</x>
+                    <y>120</y>
+                    <width>154</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="inputMethodHints">
+                   <set>Qt::ImhPreferNumbers</set>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="buttonSymbols">
+                   <enum>QAbstractSpinBox::PlusMinus</enum>
+                  </property>
+                  <property name="keyboardTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="suffix">
+                   <string/>
+                  </property>
+                  <property name="decimals">
+                   <number>3</number>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.010000000000000</double>
+                  </property>
+                  <property name="settingName" stdset="0">
+                   <string>plasmac.material.kerf_width</string>
+                  </property>
+                 </widget>
+                 <widget class="VCPSettingsDoubleSpinBox" name="settings_double_spinbox_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>80</x>
+                    <y>160</y>
+                    <width>154</width>
+                    <height>26</height>
+                   </rect>
+                  </property>
+                  <property name="inputMethodHints">
+                   <set>Qt::ImhPreferNumbers</set>
+                  </property>
+                  <property name="alignment">
+                   <set>Qt::AlignCenter</set>
+                  </property>
+                  <property name="buttonSymbols">
+                   <enum>QAbstractSpinBox::PlusMinus</enum>
+                  </property>
+                  <property name="keyboardTracking">
+                   <bool>false</bool>
+                  </property>
+                  <property name="suffix">
+                   <string/>
+                  </property>
+                  <property name="decimals">
+                   <number>3</number>
+                  </property>
+                  <property name="singleStep">
+                   <double>0.010000000000000</double>
+                  </property>
+                  <property name="settingName" stdset="0">
+                   <string>plasmac.material.pierce_height</string>
+                  </property>
+                 </widget>
                 </widget>
                </widget>
               </item>
@@ -1903,9 +1987,9 @@ T</string>
    <header>qtpyvcp.widgets.input_widgets.action_slider</header>
   </customwidget>
   <customwidget>
-   <class>HalDoubleSpinBox</class>
+   <class>VCPSettingsDoubleSpinBox</class>
    <extends>QDoubleSpinBox</extends>
-   <header>qtpyvcp.widgets.hal_widgets.hal_double_spinbox</header>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
   </customwidget>
   <customwidget>
    <class>StatusLabel</class>
@@ -1926,6 +2010,11 @@ T</string>
    <class>VCPSettingsSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>PlasmaRunSettings</class>
+   <extends>QWidget</extends>
+   <header>monokrom.plasma.widgets.plasmac_run_settings.plasmac_run_settings</header>
   </customwidget>
   <customwidget>
    <class>GcodeTextEdit</class>

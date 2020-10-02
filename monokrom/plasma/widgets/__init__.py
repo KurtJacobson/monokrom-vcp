@@ -9,3 +9,8 @@ from plasma_push_button import PlasmaPushButton
 class PlasmaPushButton_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return PlasmaPushButton
+
+from plasmac_run_settings import PlasmaRunSettings
+class PlasmaRunSettings_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return PlasmaRunSettings
