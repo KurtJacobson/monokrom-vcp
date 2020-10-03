@@ -44,6 +44,12 @@ windows:
       # Set the window title from from the date in the vcp section above.
       title: ( vcp.name ) ( vcp.version)
 
+dialogs:
+  open_file:
+    provider: monokrom.common.widgets.input_overlay:MkInputOverlay
+    kwargs:
+      ui_file: {{ file.dir}}/../common/widgets/file_chooser.ui
+
 application:
   kwargs:
     # Specify the application wide stylesheet.

@@ -6,18 +6,23 @@ class MyLineEdit_Plugin(_DesignerPlugin):
         return MyLineEdit
 
 from mk_push_button import MyPushButton
-class MyPushButton_Plugin(_DesignerPlugin):
+class MkPushButton_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MyPushButton
 
 from mk_dro import MonokromDroWidget, MonokromDroGroup
-class MonokromDroWidget_Plugin(_DesignerPlugin):
+class MkDroWidget_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MonokromDroWidget
 
-class MonokromDroGroup_Plugin(_DesignerPlugin):
+class MkDroGroup_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MonokromDroGroup
+
+from file_list_view import MkFileListView
+class MkFileListView_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return MkFileListView
 
 from transparent_widget import MkTransparentWidget
 class MkTransparentWidget_Plugin(_DesignerPlugin):

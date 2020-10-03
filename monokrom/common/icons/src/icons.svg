@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="3.959798"
-     inkscape:cx="537.50785"
-     inkscape:cy="806.95768"
+     inkscape:zoom="5.6"
+     inkscape:cx="535.92633"
+     inkscape:cy="739.08368"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -684,6 +684,40 @@
          height="28"
          rx="9"
          id="rect593-6" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffee06"
+       id="folder-solid"
+       d="m 547.40543,334.72205 h -10 l -3.334,-3.333 h -8.333 a 2.5,2.5 0 0 0 -2.5,2.5 v 15 a 2.5,2.5 0 0 0 2.5,2.5 h 21.667 a 2.5,2.5 0 0 0 2.5,-2.5 v -11.667 a 2.5,2.5 0 0 0 -2.5,-2.5 z"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/dir.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <path
+       inkscape:connector-curvature="0"
+       style="fill:#ffee06"
+       id="file-alt-solid"
+       d="m 598.75,336.91634 v -5.313 h -7.812 a 0.935,0.935 0 0 0 -0.938,0.938 v 18.125 a 0.935,0.935 0 0 0 0.938,0.937 h 13.125 a 0.935,0.935 0 0 0 0.937,-0.937 v -12.813 h -5.312 a 0.94,0.94 0 0 1 -0.938,-0.937 z m 2.5,9.219 a 0.47,0.47 0 0 1 -0.469,0.469 h -6.562 a 0.47,0.47 0 0 1 -0.469,-0.469 v -0.313 a 0.47,0.47 0 0 1 0.469,-0.469 h 6.563 a 0.47,0.47 0 0 1 0.469,0.469 z m 0,-2.5 a 0.47,0.47 0 0 1 -0.469,0.469 h -6.562 a 0.47,0.47 0 0 1 -0.469,-0.469 v -0.312 a 0.47,0.47 0 0 1 0.469,-0.469 h 6.563 a 0.47,0.47 0 0 1 0.469,0.469 z m 0,-2.812 v 0.313 a 0.47,0.47 0 0 1 -0.469,0.469 h -6.562 a 0.47,0.47 0 0 1 -0.469,-0.469 v -0.314 a 0.47,0.47 0 0 1 0.469,-0.469 h 6.563 a 0.47,0.47 0 0 1 0.468,0.469 z m 3.75,-4.458 v 0.238 h -5 v -5 h 0.238 a 0.937,0.937 0 0 1 0.662,0.273 l 3.827,3.827 a 0.935,0.935 0 0 1 0.273,0.662 z"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/file.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96" />
+    <g
+       id="g929"
+       transform="translate(-3.75,-0.71428571)"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/dir-up.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
+      <path
+         d="m 582.61921,334.79349 h -10 l -3.334,-3.333 h -8.333 a 2.5,2.5 0 0 0 -2.5,2.5 v 15 a 2.5,2.5 0 0 0 2.5,2.5 h 21.667 a 2.5,2.5 0 0 0 2.5,-2.5 v -11.667 a 2.5,2.5 0 0 0 -2.5,-2.5 z"
+         data-name="folder-solid"
+         id="folder-solid-5"
+         style="fill:#ffee06"
+         inkscape:connector-curvature="0" />
+      <path
+         d="m 565.39021,344.71949 -0.712,-0.709 a 0.766,0.766 0 0 1 0,-1.087 l 6.23,-6.234 a 0.766,0.766 0 0 1 1.087,0 l 6.23,6.23 a 0.766,0.766 0 0 1 0,1.087 l -0.712,0.712 a 0.77,0.77 0 0 1 -1.1,-0.013 l -3.678,-3.861 v 9.216 a 0.768,0.768 0 0 1 -0.77,0.77 h -1.024 a 0.768,0.768 0 0 1 -0.77,-0.77 v -9.218 l -3.681,3.868 a 0.765,0.765 0 0 1 -1.1,0.013 z"
+         id="arrow-up-solid"
+         style="fill:#16160e"
+         inkscape:connector-curvature="0" />
     </g>
   </g>
 </svg>
