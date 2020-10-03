@@ -18,3 +18,10 @@ class MonokromDroWidget_Plugin(_DesignerPlugin):
 class MonokromDroGroup_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MonokromDroGroup
+
+from transparent_widget import MkTransparentWidget
+class MkTransparentWidget_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return MkTransparentWidget
+    def isContainer(self):
+        return True
