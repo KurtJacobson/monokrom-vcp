@@ -1,4 +1,4 @@
-from qtpy.QtWidgets import QGroupBox, QTabWidget
+from qtpy.QtWidgets import QGroupBox, QTabWidget, QWidget
 
 # patch QGroupBox so title expands to full width
 def QGroupBox_resizeEvent(self, event):
@@ -7,13 +7,3 @@ def QGroupBox_resizeEvent(self, event):
     self.setStyleSheet(qss)
 
 QGroupBox.resizeEvent = QGroupBox_resizeEvent
-
-# patch QTabWidget so tabs expand to full width
-# FixMe: this is only needed on older versions of Qt,
-# so we should only patch if needed.
-def QTabWidget_resizeEvent(self, event):
-    super(QTabWidget, self).resizeEvent(event)
-    qss = "min-width: %ipx" % self.width()
-    self.tabBar().setStyleSheet(qss)
-
-QTabWidget.resizeEvent = QTabWidget_resizeEvent

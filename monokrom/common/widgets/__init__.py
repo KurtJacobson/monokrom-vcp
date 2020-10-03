@@ -30,3 +30,26 @@ class MkTransparentWidget_Plugin(_DesignerPlugin):
         return MkTransparentWidget
     def isContainer(self):
         return True
+
+from tab_widget import MkTabWidget
+class MkTabWidget_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return MkTabWidget
+    def isContainer(self):
+        return True
+    def domXml(self):
+        return """<widget class="MkTabWidget" name="tabwidget">
+                    <property name="geometry">
+                     <rect>
+                      <x>0</x>
+                      <y>0</y>
+                      <width>250</width>
+                      <height>200</height>
+                     </rect>
+                    </property>
+                    <widget class="QWidget" name="tab_1">
+                     <attribute name="title">
+                      <string>Page 1</string>
+                     </attribute>
+                    </widget>
+                  </widget>"""
