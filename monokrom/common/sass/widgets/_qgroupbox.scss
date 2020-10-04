@@ -3,7 +3,7 @@
 /*===========================================================================*/
 
 QGroupBox {
-  padding-top: 30px;
+  padding-top: 25px;
   border: $border;
   border-radius: $border-radius;
   font: bold 14px;
@@ -12,9 +12,26 @@ QGroupBox {
 QGroupBox::title {
   subcontrol-origin: padding;
   subcontrol-position: top center;
-  padding: 1px;
+  margin-top: -2px;
+  padding-top: 2px;
+  min-height: 25px;
   color: $background;
-  background: red;
-  // padding-left: 100%;
-  // padding-right: 100%;
+  background: $border-color;
+  border-top: none;
+  border-top-right-radius: $border-radius;
+  border-top-left-radius: $border-radius;
+}
+
+QGroupBox::indicator {
+  width: 25px;
+  height: 25px;
+  margin-left: 5px;
+}
+
+QGroupBox::indicator:checked {
+    image: url(icons/checkbox.inverted.checked.png);
+}
+
+QGroupBox::indicator:unchecked {
+    image: url(icons/checkbox.inverted.unchecked.png);
 }

@@ -31,28 +31,16 @@
   <property name="windowTitle">
    <string>Form</string>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout">
+  <layout class="QVBoxLayout" name="verticalLayout_2">
    <property name="spacing">
     <number>14</number>
    </property>
    <item>
-    <widget class="QFrame" name="frame">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
+    <widget class="MkGroupBox" name="mkgroupbox">
+     <property name="title">
+      <string>RECENT FILES</string>
      </property>
-     <property name="frameShape">
-      <enum>QFrame::StyledPanel</enum>
-     </property>
-     <property name="frameShadow">
-      <enum>QFrame::Raised</enum>
-     </property>
-     <property name="styleClass" stdset="0">
-      <string>comboFrame</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_2">
+     <layout class="QVBoxLayout" name="verticalLayout">
       <property name="spacing">
        <number>0</number>
       </property>
@@ -69,36 +57,21 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QComboBox" name="comboBox">
-        <property name="currentText">
-         <string>USB: linuxcnc/nc_files/wrench.ngc</string>
-        </property>
-        <property name="iconSize">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-        <item>
-         <property name="text">
-          <string>USB: linuxcnc/nc_files/wrench.ngc</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>../icons/usb.png</normaloff>../icons/usb.png</iconset>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
-       </widget>
-      </item>
-      <item>
-       <widget class="MkFileListView" name="filelistview">
+       <widget class="MkRecentFileListView" name="mkrecentfilelistview">
         <property name="alternatingRowColors">
          <bool>true</bool>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="viewMode">
+         <enum>QListView::ListMode</enum>
+        </property>
+        <property name="batchSize">
+         <number>1</number>
         </property>
        </widget>
       </item>
@@ -112,18 +85,12 @@
      </property>
      <item>
       <widget class="QPushButton" name="pushButton">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>80</height>
-        </size>
-       </property>
        <property name="styleSheet">
         <string notr="true">width: 80px;
 height: 30px;</string>
        </property>
        <property name="text">
-        <string>DELETE</string>
+        <string>REMOVE</string>
        </property>
       </widget>
      </item>
@@ -141,43 +108,7 @@ height: 30px;</string>
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>80</height>
-        </size>
-       </property>
-       <property name="styleSheet">
-        <string notr="true">width: 80px;
-height: 30px;</string>
-       </property>
-       <property name="text">
-        <string>RENAME</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <spacer name="horizontalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
       <widget class="QPushButton" name="pushButton_3">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>80</height>
-        </size>
-       </property>
        <property name="styleSheet">
         <string notr="true">width: 80px;
 height: 30px;</string>
@@ -199,11 +130,50 @@ height: 30px;</string>
    <container>1</container>
   </customwidget>
   <customwidget>
-   <class>MkFileListView</class>
-   <extends>QListView</extends>
-   <header>monokrom.common.widgets.file_list_view</header>
+   <class>MkGroupBox</class>
+   <extends>QGroupBox</extends>
+   <header>monokrom.common.widgets.group_box</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>MkRecentFileListView</class>
+   <extends>QListWidget</extends>
+   <header>monokrom.common.widgets.recent_file_list_view</header>
   </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>mkrecentfilelistview</receiver>
+   <slot>openSelected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>346</x>
+     <y>564</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>337</x>
+     <y>454</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>mkrecentfilelistview</receiver>
+   <slot>removeSelected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>43</x>
+     <y>574</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>41</x>
+     <y>499</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

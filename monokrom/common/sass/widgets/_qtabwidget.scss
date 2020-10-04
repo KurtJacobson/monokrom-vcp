@@ -42,10 +42,10 @@ QTabWidget::tab-bar {
 
 QTabWidget::tab-bar:top,
 QTabWidget::tab-bar:bottom {
-  width: 100000px; //distribute tabs
+  // width: 100000px; //distribute tabs
 }
 
 QTabWidget::tab-bar:left,
 QTabWidget::tab-bar:right {
-  height: 100000px; //distribute tabs
+  // height: 100000px; //distribute tabs
 }

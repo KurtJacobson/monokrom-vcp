@@ -355,6 +355,26 @@
               <property name="rightMargin">
                <number>14</number>
               </property>
+              <property name="bottomMargin">
+               <number>14</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="DialogButton" name="dialogbutton">
+                <property name="text">
+                 <string>OPEN</string>
+                </property>
+                <property name="dialogName" stdset="0">
+                 <string>open_file</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="ActionButton" name="actionbutton_3">
+                <property name="text">
+                 <string>CLEAR</string>
+                </property>
+               </widget>
+              </item>
               <item row="1" column="0">
                <widget class="ActionButton" name="actionbutton_2">
                 <property name="text">
@@ -363,23 +383,12 @@
                </widget>
               </item>
               <item row="0" column="1">
-               <widget class="ActionButton" name="actionbutton_4">
+               <widget class="DialogButton" name="dialogbutton_2">
                 <property name="text">
                  <string>RECENT</string>
                 </property>
-               </widget>
-              </item>
-              <item row="0" column="0">
-               <widget class="ActionButton" name="actionbutton">
-                <property name="text">
-                 <string>OPEN</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="1">
-               <widget class="ActionButton" name="actionbutton_3">
-                <property name="text">
-                 <string>CLEAR</string>
+                <property name="dialogName" stdset="0">
+                 <string>recent_files</string>
                 </property>
                </widget>
               </item>
@@ -1883,6 +1892,11 @@ T</string>
   </widget>
  </widget>
  <customwidgets>
+  <customwidget>
+   <class>DialogButton</class>
+   <extends>QPushButton</extends>
+   <header>qtpyvcp.widgets.button_widgets.dialog_button</header>
+  </customwidget>
   <customwidget>
    <class>ActionSlider</class>
    <extends>QSlider</extends>

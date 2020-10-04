@@ -24,12 +24,30 @@ class MkFileListView_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkFileListView
 
+from recent_file_list_view import MkRecentFileListView
+class MkRecentFileListView_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return MkRecentFileListView
+
 from transparent_widget import MkTransparentWidget
 class MkTransparentWidget_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkTransparentWidget
     def isContainer(self):
         return True
+
+from group_box import MkGroupBox
+class MkGroupBox_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return MkGroupBox
+    def isContainer(self):
+        return True
+    def domXml(self):
+        return """<widget class="MkGroupBox" name="groupbox">
+                  <property name="title">
+                    <string>MkGroupBox</string>
+                  </property>
+                  </widget>"""
 
 from tab_widget import MkTabWidget
 class MkTabWidget_Plugin(_DesignerPlugin):

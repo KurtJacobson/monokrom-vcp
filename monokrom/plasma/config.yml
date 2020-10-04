@@ -50,6 +50,11 @@ dialogs:
     kwargs:
       ui_file: {{ file.dir}}/../common/widgets/file_chooser.ui
 
+  recent_files:
+    provider: monokrom.common.widgets.input_overlay:MkInputOverlay
+    kwargs:
+      ui_file: {{ file.dir}}/../common/widgets/recent_file_chooser.ui
+
 application:
   kwargs:
     # Specify the application wide stylesheet.
