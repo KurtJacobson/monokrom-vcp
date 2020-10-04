@@ -29,6 +29,11 @@ class MkRecentFileListView_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkRecentFileListView
 
+from file_list_view import MkRemovableDeviceComboBox
+class MkRemovableDeviceComboBox_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return MkRemovableDeviceComboBox
+
 from transparent_widget import MkTransparentWidget
 class MkTransparentWidget_Plugin(_DesignerPlugin):
     def pluginClass(self):

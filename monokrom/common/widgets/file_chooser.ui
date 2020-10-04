@@ -69,36 +69,37 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="QComboBox" name="comboBox">
-        <property name="currentText">
-         <string>USB: linuxcnc/nc_files/wrench.ngc</string>
-        </property>
+       <widget class="MkRemovableDeviceComboBox" name="mkremovabledevicecombobox">
         <property name="iconSize">
          <size>
           <width>20</width>
           <height>20</height>
          </size>
         </property>
-        <item>
-         <property name="text">
-          <string>USB: linuxcnc/nc_files/wrench.ngc</string>
-         </property>
-         <property name="icon">
-          <iconset>
-           <normaloff>../icons/usb.png</normaloff>../icons/usb.png</iconset>
-         </property>
-        </item>
-        <item>
-         <property name="text">
-          <string>New Item</string>
-         </property>
-        </item>
        </widget>
       </item>
       <item>
        <widget class="MkFileListView" name="filelistview">
+        <property name="dragEnabled">
+         <bool>true</bool>
+        </property>
+        <property name="dragDropMode">
+         <enum>QAbstractItemView::DragDrop</enum>
+        </property>
+        <property name="defaultDropAction">
+         <enum>Qt::CopyAction</enum>
+        </property>
         <property name="alternatingRowColors">
          <bool>true</bool>
+        </property>
+        <property name="selectionMode">
+         <enum>QAbstractItemView::ExtendedSelection</enum>
+        </property>
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
         </property>
        </widget>
       </item>
@@ -111,13 +112,40 @@
       <number>14</number>
      </property>
      <item>
-      <widget class="QPushButton" name="pushButton">
-       <property name="maximumSize">
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="minimumSize">
         <size>
-         <width>80</width>
-         <height>80</height>
+         <width>34</width>
+         <height>34</height>
         </size>
        </property>
+       <property name="maximumSize">
+        <size>
+         <width>34</width>
+         <height>34</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">width: 30px;
+height: 30px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../icons/eject.png</normaloff>../icons/eject.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton">
        <property name="styleSheet">
         <string notr="true">width: 80px;
 height: 30px;</string>
@@ -128,26 +156,7 @@ height: 30px;</string>
       </widget>
      </item>
      <item>
-      <spacer name="horizontalSpacer">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
       <widget class="QPushButton" name="pushButton_2">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>80</height>
-        </size>
-       </property>
        <property name="styleSheet">
         <string notr="true">width: 80px;
 height: 30px;</string>
@@ -158,26 +167,7 @@ height: 30px;</string>
       </widget>
      </item>
      <item>
-      <spacer name="horizontalSpacer_2">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>40</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
-     </item>
-     <item>
       <widget class="QPushButton" name="pushButton_3">
-       <property name="maximumSize">
-        <size>
-         <width>80</width>
-         <height>80</height>
-        </size>
-       </property>
        <property name="styleSheet">
         <string notr="true">width: 80px;
 height: 30px;</string>
@@ -193,6 +183,11 @@ height: 30px;</string>
  </widget>
  <customwidgets>
   <customwidget>
+   <class>RemovableDeviceComboBox</class>
+   <extends>QComboBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.file_system</header>
+  </customwidget>
+  <customwidget>
    <class>MkTransparentWidget</class>
    <extends>QWidget</extends>
    <header>monokrom.common.widgets.transparent_widget</header>
@@ -203,7 +198,77 @@ height: 30px;</string>
    <extends>QListView</extends>
    <header>monokrom.common.widgets.file_list_view</header>
   </customwidget>
+  <customwidget>
+   <class>MkRemovableDeviceComboBox</class>
+   <extends>RemovableDeviceComboBox</extends>
+   <header>monokrom.common.widgets.file_list_view</header>
+  </customwidget>
  </customwidgets>
  <resources/>
- <connections/>
+ <connections>
+  <connection>
+   <sender>pushButton_3</sender>
+   <signal>clicked()</signal>
+   <receiver>filelistview</receiver>
+   <slot>openSelectedItem()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>330</x>
+     <y>568</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>326</x>
+     <y>479</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mkremovabledevicecombobox</sender>
+   <signal>currentPathChanged(QString)</signal>
+   <receiver>filelistview</receiver>
+   <slot>setRootPath(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>106</x>
+     <y>21</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>108</x>
+     <y>44</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mkremovabledevicecombobox</sender>
+   <signal>currentDeviceEjectable(bool)</signal>
+   <receiver>pushButton_4</receiver>
+   <slot>setVisible(bool)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>148</x>
+     <y>20</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>43</x>
+     <y>571</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_4</sender>
+   <signal>clicked()</signal>
+   <receiver>mkremovabledevicecombobox</receiver>
+   <slot>ejectDevice()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>31</x>
+     <y>565</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>31</x>
+     <y>13</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
 </ui>

@@ -148,9 +148,9 @@ QComboBox::down-arrow:on {
   left: 1px; }
 
 QComboBox:item {
-  color: #ffee06;
-  font-weight: normal;
-  background: #262618;
+  color: #16160e;
+  font-weight: bold;
+  background: #ffee06;
   max-height: 25px;
   padding-left: 20px; }
 
@@ -158,9 +158,11 @@ QComboBox:item:checked {
   font-weight: bold; }
 
 QComboBox QListView {
-  border-radius: 0px; }
+  border: 2px solid #ffee06;
+  border-radius: 4px;
+  background: #ffee06; }
 
-QComboBox QListView:checked {
+QComboBox QListView::item:checked {
   border-radius: 0px;
   color: red; }
 

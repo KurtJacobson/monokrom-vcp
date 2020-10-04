@@ -35,9 +35,9 @@ QComboBox::down-arrow:on { /* shift the arrow when popup is open */
 }
 
 QComboBox:item {
-  color: $border-color;
-  font-weight: normal;
-  background: lighten($background, 5%);
+  color: $background;
+  font-weight: bold;
+  background: $border-color;
   max-height: 25px;
   padding-left: 20px;
 }
@@ -47,10 +47,12 @@ QComboBox:item:checked {
 }
 
 QComboBox QListView {
-  border-radius: 0px;
+  border: $border;
+  border-radius: 4px;
+  background: $border-color;
 }
 
-QComboBox QListView:checked {
+QComboBox QListView::item:checked {
   border-radius: 0px;
   color: red;
 }
