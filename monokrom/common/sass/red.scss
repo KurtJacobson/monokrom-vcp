@@ -1,13 +1,12 @@
+// Change default values
+
 // Fonts
 $font-stack: Noto Sans !default;
 
-// Colors
-// nice orange: rgb(135, 75, 13)
-
 // Standard Colors
-$text-color: rgb(255, 238, 6);
+$text-color: rgb(114, 114, 113);
 $background: rgb(22, 22, 14);
-$border-color: rgb(255, 238, 6);
+$border-color: rgb(255, 0, 0);
 $layout-border-color: lighten($background, 6%);
 
 // Hover Colors
@@ -21,11 +20,8 @@ $disabled-background: lighten($background, 2%);
 $disabled-border-color: lighten($background, 7%);
 
 // Borders
-$border-radius: 8px;
-$border: 2px solid $border-color;
+$border-radius: 3px;
+$border: 1px solid $border-color;
 
-
-$green: rgb(118, 175, 0);
-$blue: rgb(0, 42, 192);
-$red: rgb(222, 25, 25);
-$yellow: rgb(254, 204, 0);
+// Import base style
+@import 'base';
