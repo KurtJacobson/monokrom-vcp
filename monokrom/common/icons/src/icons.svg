@@ -38,9 +38,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="562.24417"
-     inkscape:cy="711.55633"
+     inkscape:zoom="3.959798"
+     inkscape:cx="579.95285"
+     inkscape:cy="882.3309"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -882,5 +882,37 @@
          d="m 625.42703,227.06916 h 21.11021"
          style="fill:none;stroke:#ffee06;stroke-width:2.86100006;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
+    <path
+       style="fill:none;stroke:#ffee06;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="m 630.21509,157.97598 10.55511,-10.55511 10.5551,10.55511 v 0"
+       id="path884-367"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-up.inverted.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       style="fill:none;stroke:#ffee06;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="m 651.32126,170.33987 -10.55511,10.55511 -10.5551,-10.55511 v 0"
+       id="path884-3-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-down.inverted.png"
+       inkscape:export-xdpi="47.921444"
+       inkscape:export-ydpi="47.921444" />
+    <path
+       style="fill:none;stroke:#ffee06;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="m 682.96576,140.49313 10.55511,10.55511 -10.55511,10.5551 v 0"
+       id="path884-3-6-3"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-right.inverted.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
+    <path
+       style="fill:none;stroke:#ffee06;stroke-width:2.86089611;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;fill-opacity:1"
+       d="m 693.77342,185.847 -10.55511,-10.55511 10.55511,-10.5551 v 0"
+       id="path884-3-7-5"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/kurt/dev/cnc/plasma-flat/monokrom/common/icons/arrow-left.inverted.png"
+       inkscape:export-xdpi="48"
+       inkscape:export-ydpi="48" />
   </g>
 </svg>

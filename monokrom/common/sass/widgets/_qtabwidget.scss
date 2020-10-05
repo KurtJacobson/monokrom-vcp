@@ -6,10 +6,22 @@ QTabWidget {
 
 }
 
+QTabWidget::pane > QWidget {
+  border-bottom-left-radius: $border-radius;
+  border-bottom-right-radius: $border-radius;
+}
+
 QTabWidget::pane {
   border: $border;
   border-radius: $border-radius;
-  padding: 1px;
+  padding: 2px;
+  padding-top: 0px;
+}
+
+QTabWidget:disabled::pane {
+  background: $background;
+  // border-color: mix($border-color, $background, 40);
+  // background: blue;
 }
 
 QTabWidget[tabPosition="0"]::pane { //top tabs

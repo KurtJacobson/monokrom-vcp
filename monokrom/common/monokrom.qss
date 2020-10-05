@@ -450,6 +450,14 @@ QTabBar::tab:selected {
   color: #16160e;
   background: #ffee06; }
 
+QTabBar::tab:disabled {
+  color: #736c0b;
+  background: #1c1c12; }
+
+QTabBar:tab:selected:disabled {
+  color: #2d2c0d;
+  background: #736c0b; }
+
 QTabBar::tab:!selected {
   background: #16160e; }
 
@@ -509,10 +517,18 @@ QTabBar::tab:!selected:hover {
 /*===========================================================================*/
 /*                               QTabWidget                                  */
 /*===========================================================================*/
+QTabWidget::pane > QWidget {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px; }
+
 QTabWidget::pane {
   border: 2px solid #ffee06;
   border-radius: 8px;
-  padding: 1px; }
+  padding: 2px;
+  padding-top: 0px; }
+
+QTabWidget:disabled::pane {
+  background: #16160e; }
 
 QTabWidget[tabPosition="0"]::pane {
   border-top: none;
@@ -546,12 +562,12 @@ QTabWidget[tabPosition="3"]::pane {
 
 QFrame[frameShape="4"] {
   border: none;
-  border-top: 1px solid #262618;
+  border-top: 1px solid #ffee06;
   max-height: 1px; }
 
 QFrame[frameShape="5"] {
   border: none;
-  border-left: 1px solid #262618;
+  border-left: 1px solid #ffee06;
   max-width: 1px; }
 
 /*===========================================================================*/
@@ -559,7 +575,7 @@ QFrame[frameShape="5"] {
 /*===========================================================================*/
 QAbstractItemView {
   color: #ffee06;
-  background-color: #262618;
+  background-color: #16160e;
   alternate-background-color: #1c1c12;
   border: 2px solid #ffee06;
   border-color: #29291a; }
@@ -576,7 +592,7 @@ QAbstractItemView::item::icon {
   padding-right: 4px; }
 
 QAbstractItemView::item:selected {
-  color: #fffcd2;
+  color: #fff139;
   background-color: #10100a; }
 
 QListView {
@@ -631,33 +647,30 @@ QMenuBar::item:selected {
 /*                             QHeaderView                                   */
 /*===========================================================================*/
 QHeaderView {
-  min-height: 20px;
+  min-height: 25px;
   background-color: #16160e;
-  border-style: solid;
-  border-color: transparent;
-  border-bottom: 2px solid #ffee06;
-  border-bottom-color: #29291a;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px; }
+  border: none; }
 
 QHeaderView::section {
   background-color: #16160e;
-  padding-left: 5px;
+  border: none;
+  padding-left: 6px;
+  padding-right: 6px;
   text-align: center;
-  border: 1px solid transparent;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-right: 1px solid #f1e000; }
-
-QHeaderView::section:last {
-  border-right: 1px solid transparent; }
+  border-bottom: 1px solid #10100a;
+  border-right: 1px solid #10100a;
+  font-weight: bold; }
 
 /* style the sort indicator */
 QHeaderView::down-arrow {
-  image: url(icons/arrow-down.png); }
+  image: url(icons/arrow-down.inverted.png); }
 
 QHeaderView::up-arrow {
-  image: url(icons/arrow-up.png); }
+  image: url(icons/arrow-up.inverted.png); }
+
+QTableView QTableCornerButton::section {
+  border: 1px solid #10100a;
+  background: #16160e; }
 
 /*===========================================================================*/
 /*                                 QLabel                                    */
@@ -820,3 +833,6 @@ QFrame[styleClass="comboFrame"] GcodeTextEdit {
 
 QLabel {
   background-color: #16160e; }
+
+.ToolTable {
+  border-radius: 6px; }

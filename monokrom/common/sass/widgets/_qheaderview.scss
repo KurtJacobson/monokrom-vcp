@@ -3,40 +3,52 @@
 /*===========================================================================*/
 
 QHeaderView {
-  min-height: 20px;
+  min-height: 25px;
   background-color: $background;
-  border-style: solid;
-  border-color: transparent;
-  border-bottom: $border;
-  border-bottom-color: $layout-border-color;
-  border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 0px;
+  border: none;
+  // border-style: solid;
+  // border-color: transparent;
+  // border-bottom: $border;
+  // border-bottom-color: $layout-border-color;
+  // border-bottom-left-radius: 0px;
+  // border-bottom-right-radius: 0px;
 }
 
 QHeaderView::section {
   background-color: $background;
-  padding-left: 5px;
+  border: none;
+  padding-left: 6px;
+  padding-right: 6px;
   text-align: center;
-  border: 1px solid transparent;
-  margin-top: 2px;
-  margin-bottom: 2px;
-  border-right: 1px solid darken($border-color, 4%);
+  border-bottom: 1px solid darken($background, 2%);
+  border-right: 1px solid darken($background, 2%);
+  font-weight: bold;
 }
 
 QHeaderView::section:last {
-  border-right: 1px solid transparent;
+  // border-right: 1px solid red;
 }
 
 QHeaderView::section:checked
 {
-
+  // background: darken($background, 2%);
 }
 
 /* style the sort indicator */
 QHeaderView::down-arrow {
-  image: url(icons/arrow-down.png);
+  image: url(icons/arrow-down.inverted.png);
 }
 
 QHeaderView::up-arrow {
-  image: url(icons/arrow-up.png);
+  image: url(icons/arrow-up.inverted.png);
+}
+
+QTableView {
+  // selection-color: red;
+  // selection-background-color: red;
+}
+
+QTableView QTableCornerButton::section {
+  border: 1px solid darken($background, 2%);
+  background: $background;
 }

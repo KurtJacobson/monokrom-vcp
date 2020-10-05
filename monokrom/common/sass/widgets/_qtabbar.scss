@@ -53,6 +53,16 @@ QTabBar::tab:selected {
     background: $border-color;
 }
 
+QTabBar::tab:disabled {
+    color: mix($border-color, $background, 40);
+    background: lighten($background, 2%);
+}
+
+QTabBar:tab:selected:disabled {
+    color: mix($border-color, $background, 10);
+    background: mix($border-color, $background, 40);
+}
+
 QTabBar::tab:!selected {
     background: $background;
 }

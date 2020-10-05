@@ -178,6 +178,10 @@ QFrame[styleClass="comboFrame"] GcodeTextEdit {
 }
 
 
- QLabel {
+QLabel {
   background-color: $background;
+}
+
+.ToolTable {
+  border-radius: 6px;
 }

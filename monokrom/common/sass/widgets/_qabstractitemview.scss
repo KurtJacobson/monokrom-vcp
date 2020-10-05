@@ -4,7 +4,7 @@
 
 QAbstractItemView {
     color: $border-color;
-    background-color: lighten($background, 5%);
+    background-color: lighten($background, 0%);
     alternate-background-color: lighten($background, 2%);
     border: $border;
     border-color: $layout-border-color;
@@ -25,6 +25,6 @@ QAbstractItemView::item::icon {
 }
 
 QAbstractItemView::item:selected {
-    color: lighten($text-color, 40%);
+    color: lighten($text-color, 10%);
     background-color: darken($background, 2%);
 }
