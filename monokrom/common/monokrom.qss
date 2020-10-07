@@ -827,9 +827,10 @@ QFrame[styleClass="comboFrame"] GcodeTextEdit {
   padding: 0px;
   padding-bottom: 5px; }
 
-#mainTabWidget:tab-bar:bottom {
-  border: 2px solid #ffee06;
-  color: red; }
+#mainTabWidget > QTabBar::tab {
+  border: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px; }
 
 QLabel {
   background-color: #16160e; }

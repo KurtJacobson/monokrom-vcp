@@ -170,13 +170,11 @@ QFrame[styleClass="comboFrame"] GcodeTextEdit {
   padding-bottom: 5px;
 }
 
-#mainTabWidget:tab-bar:bottom {
-  border: $border;
-  color: red;
-  // border-top-left-radius: $border-radius;
-  // border-top-right-radius: $border-radius;
+#mainTabWidget > QTabBar::tab {
+  border: none;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
-
 
 QLabel {
   background-color: $background;
