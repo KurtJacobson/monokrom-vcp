@@ -72,7 +72,14 @@
        <number>0</number>
       </property>
       <item>
-       <widget class="ToolTable" name="tooltable"/>
+       <widget class="ToolTable" name="tooltable">
+        <property name="verticalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+        <property name="horizontalScrollMode">
+         <enum>QAbstractItemView::ScrollPerPixel</enum>
+        </property>
+       </widget>
       </item>
      </layout>
     </widget>
