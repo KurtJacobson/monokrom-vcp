@@ -803,6 +803,33 @@ RUN</string>
                <attribute name="title">
                 <string>JOG</string>
                </attribute>
+               <widget class="DialogButton" name="dialogbutton_3">
+                <property name="geometry">
+                 <rect>
+                  <x>20</x>
+                  <y>20</y>
+                  <width>121</width>
+                  <height>29</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>EDIT MATERIAL</string>
+                </property>
+                <property name="dialogName" stdset="0">
+                 <string>plasmac_material_editor</string>
+                </property>
+               </widget>
+               <widget class="QWidget" name="horizontalLayoutWidget">
+                <property name="geometry">
+                 <rect>
+                  <x>-50</x>
+                  <y>100</y>
+                  <width>2</width>
+                  <height>2</height>
+                 </rect>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_11"/>
+               </widget>
               </widget>
              </widget>
             </item>
@@ -1064,378 +1091,20 @@ RUN</string>
            </attribute>
            <layout class="QHBoxLayout" name="horizontalLayout_8">
             <property name="spacing">
-             <number>14</number>
+             <number>6</number>
             </property>
             <property name="leftMargin">
-             <number>9</number>
+             <number>14</number>
             </property>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_12">
-              <property name="spacing">
-               <number>15</number>
-              </property>
-              <item>
-               <widget class="QFrame" name="file_frame_2">
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <property name="styleClass" stdset="0">
-                 <string>comboFrame</string>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_11">
-                 <property name="spacing">
-                  <number>2</number>
-                 </property>
-                 <property name="leftMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>0</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>0</number>
-                 </property>
-                 <item>
-                  <layout class="QHBoxLayout" name="horizontalLayout_7">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <item>
-                    <widget class="QLabel" name="label_11">
-                     <property name="text">
-                      <string>MATERIAL:</string>
-                     </property>
-                     <property name="styleClass" stdset="0">
-                      <string>comboFrame</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QComboBox" name="comboBox">
-                     <property name="sizePolicy">
-                      <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                       <horstretch>0</horstretch>
-                       <verstretch>0</verstretch>
-                      </sizepolicy>
-                     </property>
-                     <item>
-                      <property name="text">
-                       <string>.125&quot; Mild Steel</string>
-                      </property>
-                     </item>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                 <item>
-                  <layout class="QFormLayout" name="formLayout_2">
-                   <property name="horizontalSpacing">
-                    <number>6</number>
-                   </property>
-                   <property name="verticalSpacing">
-                    <number>10</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>20</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>10</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>10</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>10</number>
-                   </property>
-                   <item row="0" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel">
-                     <property name="text">
-                      <string>KIRF WIDTH</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="0" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                     <property name="decimals">
-                      <number>3</number>
-                     </property>
-                     <property name="singleStep">
-                      <double>0.010000000000000</double>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_2">
-                     <property name="text">
-                      <string>PIRCE HEIGHT</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="1" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_2">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_4">
-                     <property name="text">
-                      <string>PIRCE DELAY</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="2" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_3">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_3">
-                     <property name="text">
-                      <string>CUT HEIGHT</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="3" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_4">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_5">
-                     <property name="text">
-                      <string>CUT FEED RATE</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="4" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_5">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_6">
-                     <property name="text">
-                      <string>CUT AMPS</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="5" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_6">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="6" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_7">
-                     <property name="text">
-                      <string>CUT VOLTS</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="6" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_7">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="7" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_8">
-                     <property name="text">
-                      <string>P-JUMP HEIGHT</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="7" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_8">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="8" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_9">
-                     <property name="text">
-                      <string>P-JUMP DELAY</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="8" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_9">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="9" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_10">
-                     <property name="text">
-                      <string>PAUSE AT END</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="9" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_10">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="10" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_11">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="10" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_11">
-                     <property name="text">
-                      <string>GAS PRESURE</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="11" column="0">
-                    <widget class="QLabel" name="paramKirfWidthLabel_12">
-                     <property name="text">
-                      <string>CUT MODE</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item row="11" column="1">
-                    <widget class="HalDoubleSpinBox" name="paramKirfWidth_12">
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                     <property name="buttonSymbols">
-                      <enum>QAbstractSpinBox::PlusMinus</enum>
-                     </property>
-                    </widget>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="MkTabWidget" name="tabWidget_10">
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
-                <property name="currentIndex">
-                 <number>0</number>
-                </property>
-                <widget class="QWidget" name="tab_18">
-                 <attribute name="title">
-                  <string>RUN SETTINGS</string>
-                 </attribute>
-                 <layout class="QHBoxLayout" name="horizontalLayout_9">
-                  <property name="spacing">
-                   <number>14</number>
-                  </property>
-                  <property name="leftMargin">
-                   <number>14</number>
-                  </property>
-                  <property name="topMargin">
-                   <number>14</number>
-                  </property>
-                  <property name="rightMargin">
-                   <number>14</number>
-                  </property>
-                  <property name="bottomMargin">
-                   <number>14</number>
-                  </property>
-                  <item>
-                   <widget class="QPushButton" name="pushButton">
-                    <property name="text">
-                     <string>SAVE</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="pushButton_2">
-                    <property name="text">
-                     <string>RELOAD</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="pushButton_3">
-                    <property name="text">
-                     <string>DELETE</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="pushButton_4">
-                    <property name="text">
-                     <string>NEW</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </widget>
-               </widget>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <widget class="PlasmaRunSettings" name="plasmarunsettings"/>
-            </item>
+            <property name="topMargin">
+             <number>14</number>
+            </property>
+            <property name="rightMargin">
+             <number>14</number>
+            </property>
+            <property name="bottomMargin">
+             <number>14</number>
+            </property>
             <item>
              <layout class="QVBoxLayout" name="verticalLayout_13">
               <item>
@@ -1454,6 +1123,21 @@ RUN</string>
                   <string>THC</string>
                  </attribute>
                  <layout class="QVBoxLayout" name="verticalLayout_14">
+                  <property name="spacing">
+                   <number>10</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>14</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>14</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>14</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>14</number>
+                  </property>
                   <item>
                    <layout class="QHBoxLayout" name="horizontalLayout_10">
                     <item>
@@ -1668,8 +1352,8 @@ T</string>
                  <widget class="VCPSettingsSpinBox" name="settings_spinbox">
                   <property name="geometry">
                    <rect>
-                    <x>80</x>
-                    <y>80</y>
+                    <x>60</x>
+                    <y>30</y>
                     <width>154</width>
                     <height>26</height>
                    </rect>
@@ -1681,8 +1365,8 @@ T</string>
                  <widget class="VCPSettingsDoubleSpinBox" name="settings_double_spinbox">
                   <property name="geometry">
                    <rect>
-                    <x>80</x>
-                    <y>120</y>
+                    <x>70</x>
+                    <y>70</y>
                     <width>154</width>
                     <height>26</height>
                    </rect>
@@ -1715,8 +1399,8 @@ T</string>
                  <widget class="VCPSettingsDoubleSpinBox" name="settings_double_spinbox_2">
                   <property name="geometry">
                    <rect>
-                    <x>80</x>
-                    <y>160</y>
+                    <x>60</x>
+                    <y>110</y>
                     <width>154</width>
                     <height>26</height>
                    </rect>
@@ -1982,6 +1666,11 @@ T</string>
    <header>qtpyvcp.widgets.button_widgets.dialog_button</header>
   </customwidget>
   <customwidget>
+   <class>VCPSettingsSpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
    <class>ActionSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.action_slider</header>
@@ -2010,11 +1699,6 @@ T</string>
    <class>VCPSettingsSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
-  </customwidget>
-  <customwidget>
-   <class>PlasmaRunSettings</class>
-   <extends>QWidget</extends>
-   <header>monokrom.plasma.widgets.plasmac_run_settings.plasmac_run_settings</header>
   </customwidget>
   <customwidget>
    <class>GcodeTextEdit</class>

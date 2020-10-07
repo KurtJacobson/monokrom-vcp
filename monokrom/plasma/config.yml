@@ -58,6 +58,11 @@ dialogs:
     kwargs:
       ui_file: {{ file.dir}}/../common/widgets/recent_file_chooser.ui
 
+  plasmac_material_editor:
+    provider: monokrom.common.widgets.input_overlay:MkInputOverlay
+    kwargs:
+      ui_file: {{ file.dir}}/ui/plasmac_run_settings_overlay.ui
+
 application:
   kwargs:
     # Specify the application wide stylesheet.
