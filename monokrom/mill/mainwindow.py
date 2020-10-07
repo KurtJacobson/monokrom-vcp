@@ -18,18 +18,15 @@ class MainWindow(VCPMainWindow):
     def __init__(self, *args, **kwargs):
         super(MainWindow, self).__init__(*args, **kwargs)
 
-
         self.mainModeTabWidget.currentChanged.connect(self.onModeTabIndexChanged)
 
         STATUS.task_mode.notify(self.onTaskModeChanged)
+        STATUS.task_state.onValueChanged(self.onTaskStateChanged)
         STATUS.interp_state.notify(self.onInterpStateChanged)
 
-        STATUS.task_state.onValueChanged(self.changeTaskModeOk)
-        # STATUS.interp_state.onValueChanged(self.changeTaskModeOk)
 
-    def changeTaskModeOk(self):
-        ok = STATUS.stat.task_state == linuxcnc.STATE_ON
-        self.mainModeTabWidget.setEnabled(ok)
+    def onTaskStateChanged(self, task_state):
+        self.mainModeTabWidget.setEnabled(task_state == linuxcnc.STATE_ON)
 
     def onModeTabIndexChanged(self, index):
         if index == 0:

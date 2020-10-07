@@ -46,7 +46,7 @@
        <enum>QTabWidget::South</enum>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab">
        <attribute name="title">
@@ -407,70 +407,6 @@
               <number>14</number>
              </property>
              <item>
-              <widget class="ActionButton" name="actionbutton_16">
-               <property name="focusPolicy">
-                <enum>Qt::NoFocus</enum>
-               </property>
-               <property name="text">
-                <string>MANUAL</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <property name="actionName" stdset="0">
-                <string>machine.mode.manual</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="ActionButton" name="actionbutton_17">
-               <property name="focusPolicy">
-                <enum>Qt::NoFocus</enum>
-               </property>
-               <property name="text">
-                <string>AUTO</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <property name="actionName" stdset="0">
-                <string>machine.mode.auto</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="ActionButton" name="actionbutton_18">
-               <property name="focusPolicy">
-                <enum>Qt::NoFocus</enum>
-               </property>
-               <property name="text">
-                <string>MDI</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="autoExclusive">
-                <bool>true</bool>
-               </property>
-               <property name="actionName" stdset="0">
-                <string>machine.mode.mdi</string>
-               </property>
-              </widget>
-             </item>
-             <item>
-              <widget class="Line" name="line">
-               <property name="orientation">
-                <enum>Qt::Horizontal</enum>
-               </property>
-              </widget>
-             </item>
-             <item>
               <widget class="ActionButton" name="actionbutton_10">
                <property name="text">
                 <string>MACHINE POWER</string>
@@ -482,6 +418,72 @@
                 <string>machine.power.toggle</string>
                </property>
               </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="MkGroupBox" name="groupbox_7">
+            <property name="title">
+             <string>SPINDLE</string>
+            </property>
+            <layout class="QVBoxLayout" name="verticalLayout_14">
+             <property name="leftMargin">
+              <number>14</number>
+             </property>
+             <property name="topMargin">
+              <number>14</number>
+             </property>
+             <property name="rightMargin">
+              <number>14</number>
+             </property>
+             <property name="bottomMargin">
+              <number>14</number>
+             </property>
+             <item>
+              <widget class="QLabel" name="label_6">
+               <property name="text">
+                <string>SPINDLE SPEED</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="ActionSpinBox" name="actionspinbox">
+               <property name="alignment">
+                <set>Qt::AlignCenter</set>
+               </property>
+               <property name="buttonSymbols">
+                <enum>QAbstractSpinBox::PlusMinus</enum>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <layout class="QHBoxLayout" name="horizontalLayout_8">
+               <item>
+                <widget class="ActionButton" name="actionbutton_22">
+                 <property name="text">
+                  <string>CCW</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="ActionButton" name="actionbutton_25">
+                 <property name="text">
+                  <string>CCW</string>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="ActionButton" name="actionbutton_24">
+                 <property name="text">
+                  <string>CCW</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
              </item>
             </layout>
            </widget>
@@ -661,7 +663,7 @@
                <item row="0" column="0">
                 <widget class="ActionSlider" name="actionslider_2">
                  <property name="enabled">
-                  <bool>false</bool>
+                  <bool>true</bool>
                  </property>
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
@@ -811,7 +813,7 @@
                </size>
               </property>
               <property name="currentIndex">
-               <number>2</number>
+               <number>0</number>
               </property>
               <widget class="QWidget" name="tab_14">
                <attribute name="title">
@@ -856,17 +858,17 @@
                  <string>TOUCH OFF</string>
                 </property>
                </widget>
-               <widget class="ActionButton" name="actionbutton_22">
+               <widget class="Line" name="line">
                 <property name="geometry">
                  <rect>
-                  <x>20</x>
-                  <y>200</y>
-                  <width>51</width>
-                  <height>51</height>
+                  <x>10</x>
+                  <y>180</y>
+                  <width>351</width>
+                  <height>2</height>
                  </rect>
                 </property>
-                <property name="text">
-                 <string>CCW</string>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
                 </property>
                </widget>
               </widget>
@@ -916,8 +918,8 @@ HOLD</string>
                <widget class="ActionButton" name="actionbutton_7">
                 <property name="geometry">
                  <rect>
-                  <x>170</x>
-                  <y>20</y>
+                  <x>10</x>
+                  <y>110</y>
                   <width>71</width>
                   <height>36</height>
                  </rect>
@@ -1100,7 +1102,7 @@ ABORT</string>
         <item>
          <widget class="MkTabWidget" name="tabWidget">
           <property name="currentIndex">
-           <number>1</number>
+           <number>0</number>
           </property>
           <widget class="QWidget" name="tab_8">
            <attribute name="title">
@@ -1503,6 +1505,11 @@ ABORT</string>
    <header>qtpyvcp.widgets.button_widgets.dialog_button</header>
   </customwidget>
   <customwidget>
+   <class>ActionSpinBox</class>
+   <extends>QSpinBox</extends>
+   <header>qtpyvcp.widgets.button_widgets.action_spinbox</header>
+  </customwidget>
+  <customwidget>
    <class>ActionSlider</class>
    <extends>QSlider</extends>
    <header>qtpyvcp.widgets.input_widgets.action_slider</header>
@@ -1600,8 +1607,8 @@ ABORT</string>
    <slot>clearOffsetTable()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>128</x>
-     <y>392</y>
+     <x>138</x>
+     <y>432</y>
     </hint>
     <hint type="destinationlabel">
      <x>132</x>
@@ -1616,8 +1623,8 @@ ABORT</string>
    <slot>loadOffsetTable()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>285</x>
-     <y>394</y>
+     <x>252</x>
+     <y>434</y>
     </hint>
     <hint type="destinationlabel">
      <x>275</x>
@@ -1632,12 +1639,12 @@ ABORT</string>
    <slot>saveOffsetTable()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>436</x>
-     <y>388</y>
+     <x>359</x>
+     <y>428</y>
     </hint>
     <hint type="destinationlabel">
-     <x>439</x>
-     <y>318</y>
+     <x>421</x>
+     <y>328</y>
     </hint>
    </hints>
   </connection>
