@@ -837,3 +837,20 @@ QLabel {
 
 .ToolTable {
   border-radius: 6px; }
+
+.MkMdiEntry QLabel {
+  color: #16160e;
+  font-size: 12pt;
+  font-weight: normal;
+  background: #ffee06;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  padding-right: -2px; }
+
+.MkMdiEntry QLineEdit {
+  color: #ffee06;
+  min-height: 35px;
+  padding-left: 5px;
+  font-size: 16pt;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px; }

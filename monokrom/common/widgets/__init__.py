@@ -19,6 +19,11 @@ class MkDroGroup_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MonokromDroGroup
 
+from mdi_entry import MkMdiEntry
+class MkMdiEntry_Plugin(_DesignerPlugin):
+    def pluginClass(self):
+        return MkMdiEntry
+
 from file_list_view import MkFileListView
 class MkFileListView_Plugin(_DesignerPlugin):
     def pluginClass(self):
