@@ -74,91 +74,170 @@
            <number>14</number>
           </property>
           <item>
-           <widget class="QFrame" name="file_frame">
-            <property name="frameShape">
-             <enum>QFrame::StyledPanel</enum>
+           <widget class="VCPStackedWidget" name="stackedWidget">
+            <property name="currentIndex">
+             <number>1</number>
             </property>
-            <property name="frameShadow">
-             <enum>QFrame::Raised</enum>
-            </property>
-            <property name="styleClass" stdset="0">
-             <string>comboFrame</string>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_8">
-             <property name="spacing">
-              <number>2</number>
-             </property>
-             <property name="leftMargin">
-              <number>0</number>
-             </property>
-             <property name="topMargin">
-              <number>0</number>
-             </property>
-             <property name="rightMargin">
-              <number>0</number>
-             </property>
-             <property name="bottomMargin">
-              <number>0</number>
-             </property>
-             <item>
-              <layout class="QHBoxLayout" name="horizontalLayout_6">
-               <property name="spacing">
-                <number>0</number>
-               </property>
-               <item>
-                <widget class="QLabel" name="label_7">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
+            <widget class="QWidget" name="page_1">
+             <layout class="QVBoxLayout" name="verticalLayout_16">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QFrame" name="file_frame">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <property name="styleClass" stdset="0">
+                 <string>comboFrame</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_8">
+                 <property name="spacing">
+                  <number>2</number>
                  </property>
-                 <property name="text">
-                  <string>OPEN:</string>
+                 <property name="leftMargin">
+                  <number>0</number>
                  </property>
-                 <property name="styleClass" stdset="0">
-                  <string>comboFrame</string>
+                 <property name="topMargin">
+                  <number>0</number>
                  </property>
-                </widget>
-               </item>
-               <item>
-                <widget class="RecentFileComboBox" name="recentfilecombobox_2">
-                 <property name="sizePolicy">
-                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                   <horstretch>0</horstretch>
-                   <verstretch>0</verstretch>
-                  </sizepolicy>
+                 <property name="rightMargin">
+                  <number>0</number>
                  </property>
-                </widget>
-               </item>
-              </layout>
-             </item>
-             <item>
-              <widget class="GcodeTextEdit" name="gcodetextedit_3">
-               <property name="currentLineBackground" stdset="0">
-                <color>
-                 <red>40</red>
-                 <green>40</green>
-                 <blue>28</blue>
-                </color>
-               </property>
-               <property name="marginBackground" stdset="0">
-                <color>
-                 <red>22</red>
-                 <green>22</green>
-                 <blue>14</blue>
-                </color>
-               </property>
-               <property name="marginCurrentLineBackground" stdset="0">
-                <color>
-                 <red>33</red>
-                 <green>33</green>
-                 <blue>24</blue>
-                </color>
-               </property>
-              </widget>
-             </item>
-            </layout>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <layout class="QHBoxLayout" name="horizontalLayout_6">
+                   <property name="spacing">
+                    <number>0</number>
+                   </property>
+                   <item>
+                    <widget class="QLabel" name="label_7">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                     <property name="text">
+                      <string>OPEN:</string>
+                     </property>
+                     <property name="styleClass" stdset="0">
+                      <string>comboFrame</string>
+                     </property>
+                    </widget>
+                   </item>
+                   <item>
+                    <widget class="RecentFileComboBox" name="recentfilecombobox_2">
+                     <property name="sizePolicy">
+                      <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
+                       <horstretch>0</horstretch>
+                       <verstretch>0</verstretch>
+                      </sizepolicy>
+                     </property>
+                    </widget>
+                   </item>
+                  </layout>
+                 </item>
+                 <item>
+                  <widget class="GcodeTextEdit" name="gcodetextedit_3">
+                   <property name="currentLineBackground" stdset="0">
+                    <color>
+                     <red>40</red>
+                     <green>40</green>
+                     <blue>28</blue>
+                    </color>
+                   </property>
+                   <property name="marginBackground" stdset="0">
+                    <color>
+                     <red>22</red>
+                     <green>22</green>
+                     <blue>14</blue>
+                    </color>
+                   </property>
+                   <property name="marginCurrentLineBackground" stdset="0">
+                    <color>
+                     <red>33</red>
+                     <green>33</green>
+                     <blue>24</blue>
+                    </color>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+            <widget class="QWidget" name="page_2">
+             <layout class="QVBoxLayout" name="verticalLayout_18">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="MkGroupBox" name="groupbox_9">
+                <property name="title">
+                 <string>MDI</string>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_17">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="MDIHistory" name="mdihistory">
+                   <property name="alternatingRowColors">
+                    <bool>true</bool>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="MDIEntry" name="mdientry_2"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
            </widget>
           </item>
           <item>
@@ -211,6 +290,9 @@
                   <height>29</height>
                  </size>
                 </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
                 <property name="text">
                  <string>G54</string>
                 </property>
@@ -226,6 +308,9 @@
                   <width>34</width>
                   <height>29</height>
                  </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
                 </property>
                 <property name="text">
                  <string>G55</string>
@@ -243,6 +328,9 @@
                   <height>29</height>
                  </size>
                 </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
                 <property name="text">
                  <string>G56</string>
                 </property>
@@ -258,6 +346,9 @@
                   <width>34</width>
                   <height>29</height>
                  </size>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
                 </property>
                 <property name="text">
                  <string>G57</string>
@@ -336,7 +427,7 @@
           <item>
            <widget class="MkGroupBox" name="groupbox_5">
             <property name="title">
-             <string>FILE</string>
+             <string>PROGRAM</string>
             </property>
             <layout class="QGridLayout" name="gridLayout">
              <property name="leftMargin">
@@ -353,6 +444,9 @@
              </property>
              <item row="0" column="0">
               <widget class="DialogButton" name="dialogbutton">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
                <property name="text">
                 <string>OPEN</string>
                </property>
@@ -363,6 +457,9 @@
              </item>
              <item row="0" column="1">
               <widget class="DialogButton" name="dialogbutton_2">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
                <property name="text">
                 <string>RECENT</string>
                </property>
@@ -373,6 +470,9 @@
              </item>
              <item row="1" column="0">
               <widget class="ActionButton" name="actionbutton_2">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
                <property name="text">
                 <string>EDIT</string>
                </property>
@@ -380,42 +480,11 @@
              </item>
              <item row="1" column="1">
               <widget class="ActionButton" name="actionbutton_3">
+               <property name="focusPolicy">
+                <enum>Qt::NoFocus</enum>
+               </property>
                <property name="text">
                 <string>CLEAR</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-          <item>
-           <widget class="MkGroupBox" name="groupbox_4">
-            <property name="title">
-             <string>CONTROL</string>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_13">
-             <property name="leftMargin">
-              <number>14</number>
-             </property>
-             <property name="topMargin">
-              <number>14</number>
-             </property>
-             <property name="rightMargin">
-              <number>14</number>
-             </property>
-             <property name="bottomMargin">
-              <number>14</number>
-             </property>
-             <item>
-              <widget class="ActionButton" name="actionbutton_10">
-               <property name="text">
-                <string>MACHINE POWER</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="actionName" stdset="0">
-                <string>machine.power.toggle</string>
                </property>
               </widget>
              </item>
@@ -464,6 +533,9 @@
               <layout class="QHBoxLayout" name="horizontalLayout_8">
                <item>
                 <widget class="ActionButton" name="actionbutton_22">
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="text">
                   <string>CCW</string>
                  </property>
@@ -471,15 +543,21 @@
                </item>
                <item>
                 <widget class="ActionButton" name="actionbutton_25">
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="text">
-                  <string>CCW</string>
+                  <string>OFF</string>
                  </property>
                 </widget>
                </item>
                <item>
                 <widget class="ActionButton" name="actionbutton_24">
+                 <property name="focusPolicy">
+                  <enum>Qt::NoFocus</enum>
+                 </property>
                  <property name="text">
-                  <string>CCW</string>
+                  <string>CW</string>
                  </property>
                 </widget>
                </item>
@@ -663,7 +741,7 @@
                <item row="0" column="0">
                 <widget class="ActionSlider" name="actionslider_2">
                  <property name="enabled">
-                  <bool>true</bool>
+                  <bool>false</bool>
                  </property>
                  <property name="sizePolicy">
                   <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
@@ -756,7 +834,10 @@
              <attribute name="title">
               <string>TOOL PATH</string>
              </attribute>
-             <layout class="QHBoxLayout" name="horizontalLayout_5">
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <property name="spacing">
+               <number>0</number>
+              </property>
               <property name="leftMargin">
                <number>0</number>
               </property>
@@ -769,6 +850,36 @@
               <property name="bottomMargin">
                <number>0</number>
               </property>
+              <item>
+               <widget class="StatusLabel" name="statuslabel">
+                <property name="font">
+                 <font>
+                  <family>Sans</family>
+                  <weight>75</weight>
+                  <italic>false</italic>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?t&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;tooltable:current_tool?r&quot;, &quot;trigger&quot;: false}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;T{}: {}\&quot;.format(ch[0], ch[1])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="StatusLabel" name="statuslabel_2">
+                <property name="font">
+                 <font>
+                  <family>Sans</family>
+                  <weight>75</weight>
+                  <italic>false</italic>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;tooltable:current_tool?d&quot;, &quot;trigger&quot;: true}, {&quot;url&quot;: &quot;tooltable:current_tool?z&quot;, &quot;trigger&quot;: false}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;\&quot;Dia: {:0.3f}   Z-offset: {:0.3f}\&quot;.format(ch[0], ch[1])&quot;, &quot;name&quot;: &quot;New Rule&quot;}]</string>
+                </property>
+               </widget>
+              </item>
               <item>
                <widget class="VTKBackPlot" name="vtkbackplot">
                 <property name="backgroundColor" stdset="0">
@@ -823,10 +934,13 @@
                 <property name="geometry">
                  <rect>
                   <x>10</x>
-                  <y>10</y>
+                  <y>70</y>
                   <width>91</width>
                   <height>29</height>
                  </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
                 </property>
                 <property name="text">
                  <string>JOG</string>
@@ -836,10 +950,13 @@
                 <property name="geometry">
                  <rect>
                   <x>10</x>
-                  <y>50</y>
+                  <y>110</y>
                   <width>91</width>
                   <height>29</height>
                  </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
                 </property>
                 <property name="text">
                  <string>PROBE</string>
@@ -849,26 +966,115 @@
                 <property name="geometry">
                  <rect>
                   <x>10</x>
-                  <y>90</y>
+                  <y>150</y>
                   <width>91</width>
                   <height>29</height>
                  </rect>
+                </property>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
                 </property>
                 <property name="text">
                  <string>TOUCH OFF</string>
                 </property>
                </widget>
-               <widget class="Line" name="line">
+               <widget class="ActionButton" name="actionbutton_18">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>170</y>
+                  <width>91</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>SPINDLE
+REVERSE</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>spindle.reverse</string>
+                </property>
+               </widget>
+               <widget class="ActionButton" name="actionbutton_26">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>80</y>
+                  <width>91</width>
+                  <height>81</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>SPINDLE
+STOP</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>spindle.off</string>
+                </property>
+               </widget>
+               <widget class="ActionButton" name="actionbutton_27">
+                <property name="geometry">
+                 <rect>
+                  <x>260</x>
+                  <y>20</y>
+                  <width>91</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>SPINDLE
+FORWARD</string>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[]</string>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>spindle.forward</string>
+                </property>
+               </widget>
+               <widget class="ActionButton" name="actionbutton_10">
                 <property name="geometry">
                  <rect>
                   <x>10</x>
-                  <y>180</y>
-                  <width>351</width>
-                  <height>2</height>
+                  <y>20</y>
+                  <width>91</width>
+                  <height>41</height>
                  </rect>
                 </property>
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
+                <property name="focusPolicy">
+                 <enum>Qt::NoFocus</enum>
+                </property>
+                <property name="text">
+                 <string>MACHINE
+POWER</string>
+                </property>
+                <property name="checkable">
+                 <bool>true</bool>
+                </property>
+                <property name="actionName" stdset="0">
+                 <string>machine.power.toggle</string>
+                </property>
+               </widget>
+               <widget class="StatusLabel" name="statuslabel_9">
+                <property name="geometry">
+                 <rect>
+                  <x>270</x>
+                  <y>230</y>
+                  <width>61</width>
+                  <height>21</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string>0.0</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                </property>
+                <property name="rules" stdset="0">
+                 <string>[{&quot;channels&quot;: [{&quot;url&quot;: &quot;status:settings?speed&quot;, &quot;trigger&quot;: true}], &quot;property&quot;: &quot;Text&quot;, &quot;expression&quot;: &quot;str( ch[0] )&quot;, &quot;name&quot;: &quot;S Word&quot;}]</string>
+                </property>
+                <property name="format" stdset="0">
+                 <string>{:.0f}</string>
                 </property>
                </widget>
               </widget>
@@ -876,6 +1082,16 @@
                <attribute name="title">
                 <string>MDI</string>
                </attribute>
+               <widget class="MkMdiEntry" name="mkmdientry">
+                <property name="geometry">
+                 <rect>
+                  <x>10</x>
+                  <y>218</y>
+                  <width>341</width>
+                  <height>41</height>
+                 </rect>
+                </property>
+               </widget>
               </widget>
               <widget class="QWidget" name="tab_10">
                <attribute name="title">
@@ -1257,6 +1473,65 @@ ABORT</string>
              </item>
             </layout>
            </widget>
+           <widget class="QFrame" name="frame">
+            <property name="geometry">
+             <rect>
+              <x>50</x>
+              <y>470</y>
+              <width>441</width>
+              <height>80</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="ActionButton" name="actionbutton_16">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>0</y>
+               <width>41</width>
+               <height>81</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="ActionButton" name="actionbutton_17">
+             <property name="geometry">
+              <rect>
+               <x>400</x>
+               <y>0</y>
+               <width>41</width>
+               <height>81</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="DROLineEdit" name="dro_entry">
+             <property name="geometry">
+              <rect>
+               <x>110</x>
+               <y>0</y>
+               <width>291</width>
+               <height>81</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLabel" name="label_11">
+             <property name="geometry">
+              <rect>
+               <x>40</x>
+               <y>10</y>
+               <width>71</width>
+               <height>61</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string>X</string>
+             </property>
+            </widget>
+           </widget>
           </widget>
           <widget class="QWidget" name="tab_9">
            <attribute name="title">
@@ -1500,6 +1775,11 @@ ABORT</string>
  </widget>
  <customwidgets>
   <customwidget>
+   <class>MkMdiEntry</class>
+   <extends>QWidget</extends>
+   <header>monokrom.common.widgets.mdi_entry</header>
+  </customwidget>
+  <customwidget>
    <class>DialogButton</class>
    <extends>QPushButton</extends>
    <header>qtpyvcp.widgets.button_widgets.dialog_button</header>
@@ -1508,6 +1788,11 @@ ABORT</string>
    <class>ActionSpinBox</class>
    <extends>QSpinBox</extends>
    <header>qtpyvcp.widgets.button_widgets.action_spinbox</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIEntry</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdientry_widget</header>
   </customwidget>
   <customwidget>
    <class>ActionSlider</class>
@@ -1520,6 +1805,11 @@ ABORT</string>
    <header>qtpyvcp.widgets.input_widgets.offset_table</header>
   </customwidget>
   <customwidget>
+   <class>DROLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>qtpyvcp.widgets.input_widgets.dro_line_edit</header>
+  </customwidget>
+  <customwidget>
    <class>ActiveGcodesTable</class>
    <extends>QTableView</extends>
    <header>qtpyvcp.widgets.display_widgets.active_gcodes_table</header>
@@ -1528,6 +1818,12 @@ ABORT</string>
    <class>StatusLabel</class>
    <extends>QLabel</extends>
    <header>qtpyvcp.widgets.display_widgets.status_label</header>
+  </customwidget>
+  <customwidget>
+   <class>VCPStackedWidget</class>
+   <extends>QStackedWidget</extends>
+   <header>qtpyvcp.widgets.containers.stack</header>
+   <container>1</container>
   </customwidget>
   <customwidget>
    <class>RecentFileComboBox</class>
@@ -1569,6 +1865,11 @@ ABORT</string>
    <class>VCPSettingsComboBox</class>
    <extends>QComboBox</extends>
    <header>qtpyvcp.widgets.input_widgets.setting_slider</header>
+  </customwidget>
+  <customwidget>
+   <class>MDIHistory</class>
+   <extends>QListWidget</extends>
+   <header>qtpyvcp.widgets.input_widgets.mdihistory_widget</header>
   </customwidget>
   <customwidget>
    <class>VCPMainWindow</class>
@@ -1645,6 +1946,22 @@ ABORT</string>
     <hint type="destinationlabel">
      <x>421</x>
      <y>328</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>mdihistory</sender>
+   <signal>currentTextChanged(QString)</signal>
+   <receiver>mdientry_2</receiver>
+   <slot>setText(QString)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>138</x>
+     <y>336</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>126</x>
+     <y>383</y>
     </hint>
    </hints>
   </connection>
