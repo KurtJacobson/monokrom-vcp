@@ -397,16 +397,23 @@ QGroupBox::title {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px; }
 
+QGroupBox[checkable=true]::title {
+  padding-left: -30px; }
+
 QGroupBox::indicator {
+  subcontrol-origin: content;
   width: 25px;
   height: 25px;
-  margin-left: 5px; }
+  margin-left: 35px; }
 
 QGroupBox::indicator:checked {
   image: url(icons/checkbox.inverted.checked.png); }
 
 QGroupBox::indicator:unchecked {
   image: url(icons/checkbox.inverted.unchecked.png); }
+
+QGroupBox.disabled {
+  border-color: red; }
 
 /*===========================================================================*/
 /*                                QTabBar                                    */
@@ -835,6 +842,16 @@ QFrame[styleClass="comboFrame"] GcodeTextEdit {
 QLabel {
   background-color: #16160e; }
 
+#mdi_groubox > MkMdiEntry > QLabel {
+  border-radius: 0px;
+  font-weight: normal; }
+
+#mdi_groubox > MkMdiEntry > QLineEdit {
+  border-radius: 0px;
+  border-bottom: none;
+  border-right: none;
+  border-bottom-right-radius: 4px; }
+
 .ToolTable {
   border-radius: 6px; }
 
@@ -854,3 +871,6 @@ QLabel {
   font-size: 16pt;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px; }
+
+VTKBackPlot QLabel {
+  font-weight: normal; }

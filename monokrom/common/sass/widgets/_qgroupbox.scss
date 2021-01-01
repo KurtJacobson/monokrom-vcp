@@ -22,10 +22,15 @@ QGroupBox::title {
   border-top-left-radius: $border-radius;
 }
 
+QGroupBox[checkable=true]::title {
+  padding-left: -30px;
+}
+
 QGroupBox::indicator {
+  subcontrol-origin: content;
   width: 25px;
   height: 25px;
-  margin-left: 5px;
+  margin-left: 35px;
 }
 
 QGroupBox::indicator:checked {
@@ -34,4 +39,9 @@ QGroupBox::indicator:checked {
 
 QGroupBox::indicator:unchecked {
     image: url(icons/checkbox.inverted.unchecked.png);
+}
+
+
+QGroupBox.disabled {
+  border-color: red;
 }

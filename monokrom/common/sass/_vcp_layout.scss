@@ -180,6 +180,19 @@ QLabel {
   background-color: $background;
 }
 
+
+#mdi_groubox > MkMdiEntry > QLabel {
+  border-radius: 0px;
+  font-weight: normal;
+}
+
+#mdi_groubox > MkMdiEntry > QLineEdit {
+  border-radius: 0px;
+  border-bottom: none;
+  border-right: none;
+  border-bottom-right-radius: 4px;
+}
+
 .ToolTable {
   border-radius: 6px;
 }
@@ -204,5 +217,8 @@ QLabel {
   font-size: 16pt;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+}
 
+VTKBackPlot QLabel {
+  font-weight: normal;
 }
