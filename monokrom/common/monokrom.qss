@@ -184,11 +184,11 @@ QLineEdit:focus {
 /*===========================================================================*/
 QSpinBox,
 QDoubleSpinBox {
-  font: bold italic 15pt "DSEG7 Classic";
+  font: bold italic 14pt "DSEG7 Classic";
   color: #16160e;
-  height: 30px;
-  max-height: 30px;
-  min-width: 150px;
+  height: 25px;
+  max-height: 25px;
+  min-width: 140px;
   border: 2px solid #ffee06;
   border-radius: 8px;
   background-color: #ffee06; }
