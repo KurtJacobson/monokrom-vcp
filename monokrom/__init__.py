@@ -99,7 +99,7 @@ def main(machine_type='plasma', opts=None):
                 src = os.path.expanduser('~/.local/share/monokrom/linuxcnc')
 
             copy_tree(src, os.path.expanduser('~/linuxcnc'), update=1)
-            print "Successfully copied sim configs to ~/linuxcnc."
+            print("Successfully copied sim configs to ~/linuxcnc.")
             return
 
     # choose the right config file for the machine type

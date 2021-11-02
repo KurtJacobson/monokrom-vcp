@@ -213,7 +213,7 @@ class MkFileListView(QListView):
         dst = self.model.filePath(self.rootIndex())
 
         for file in files:
-            print "Copy: {} > {}".format(file, dst)
+            print(("Copy: {} > {}".format(file, dst)))
             self.copyRecursively(file, dst)
 
     def copyRecursively(self, src, tgt):
