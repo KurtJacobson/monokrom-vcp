@@ -1,16 +1,16 @@
 from qtpyvcp.widgets.qtdesigner import _DesignerPlugin
 
-from mk_line_edit import MyLineEdit
+from .mk_line_edit import MyLineEdit
 class MyLineEdit_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MyLineEdit
 
-from mk_push_button import MyPushButton
+from .mk_push_button import MyPushButton
 class MkPushButton_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MyPushButton
 
-from mk_dro import MonokromDroWidget, MonokromDroGroup
+from .mk_dro import MonokromDroWidget, MonokromDroGroup
 class MkDroWidget_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MonokromDroWidget
@@ -19,34 +19,34 @@ class MkDroGroup_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MonokromDroGroup
 
-from mdi_entry import MkMdiEntry
+from .mdi_entry import MkMdiEntry
 class MkMdiEntry_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkMdiEntry
 
-from file_list_view import MkFileListView
+from .file_list_view import MkFileListView
 class MkFileListView_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkFileListView
 
-from recent_file_list_view import MkRecentFileListView
+from .recent_file_list_view import MkRecentFileListView
 class MkRecentFileListView_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkRecentFileListView
 
-from file_list_view import MkRemovableDeviceComboBox
+from .file_list_view import MkRemovableDeviceComboBox
 class MkRemovableDeviceComboBox_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkRemovableDeviceComboBox
 
-from transparent_widget import MkTransparentWidget
+from .transparent_widget import MkTransparentWidget
 class MkTransparentWidget_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkTransparentWidget
     def isContainer(self):
         return True
 
-from group_box import MkGroupBox
+from .group_box import MkGroupBox
 class MkGroupBox_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkGroupBox
@@ -59,7 +59,7 @@ class MkGroupBox_Plugin(_DesignerPlugin):
                   </property>
                   </widget>"""
 
-from tab_widget import MkTabWidget
+from .tab_widget import MkTabWidget
 class MkTabWidget_Plugin(_DesignerPlugin):
     def pluginClass(self):
         return MkTabWidget

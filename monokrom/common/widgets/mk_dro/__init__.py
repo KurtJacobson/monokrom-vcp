@@ -1,1 +1,1 @@
-from mk_dro import MonokromDroWidget, MonokromDroGroup
+from .mk_dro import MonokromDroWidget, MonokromDroGroup
